@@ -14,21 +14,8 @@ def safe_get(url, headers=None):
         pass
     return None
 
-def search_yahoo(name):
-    try:
-        data = yf.Ticker(name)
-        info = data.info
-        if info and "symbol" in info:
-            return {
-                "Ticker": info.get("symbol", ""),
-                "ISIN": info.get("isin", ""),
-                "Fonte": "Yahoo Finance"
-            }
-    except Exception:
-        pass
-    return None
-
 def search_justetf(name):
+    """Ricerca più tollerante su JustETF"""
     url = f"https://www.justetf.com/en/find-etf.html?query={name.replace(' ', '+')}"
     html = safe_get(url)
     if not html:
@@ -36,43 +23,32 @@ def search_justetf(name):
     soup = BeautifulSoup(html, "lxml")
     link = soup.select_one("a.result-link")
     if not link:
-        return None
-    detail = safe_get("https://www.justetf.com" + link["href"])
+        # prova a cercare nella tabella
+        first_link = soup.select_one("table a")
+        if not first_link:
+            return None
+        link = first_link
+    detail_url = "https://www.justetf.com" + link["href"]
+    detail = safe_get(detail_url)
     if not detail:
         return None
     s = BeautifulSoup(detail, "lxml")
-    isin_tag = s.find(string=lambda x: "ISIN" in x)
-    isin = isin_tag.find_next().text.strip() if isin_tag else ""
-    ticker_tag = s.find(string=lambda x: "Ticker" in x)
-    ticker = ticker_tag.find_next().text.strip() if ticker_tag else ""
-    return {"Ticker": ticker, "ISIN": isin, "Fonte": "JustETF"}
-
-def search_generic(name, site, pattern):
-    url = pattern.format(query=name.replace(" ", "+"))
-    html = safe_get(url)
-    if not html:
+    isin = ""
+    ticker = ""
+    for el in s.find_all(text=True):
+        if "ISIN" in el:
+            next_el = s.find(string="ISIN").find_next()
+            if next_el:
+                isin = next_el.text.strip()
+        if "Ticker" in el:
+            next_el = s.find(string="Ticker").find_next()
+            if next_el:
+                ticker = next_el.text.strip()
+    if not isin and not ticker:
         return None
-    s = BeautifulSoup(html, "lxml")
-    text = s.get_text(" ", strip=True)
-    isin = re.search(r"\b[A-Z]{2}[A-Z0-9]{9}\d\b", text)
-    ticker = re.search(r"\b[A-Z]{2,6}\.[A-Z]{1,3}\b", text)
-    if isin or ticker:
-        return {
-            "Ticker": ticker.group(0) if ticker else "",
-            "ISIN": isin.group(0) if isin else "",
-            "Fonte": site
-        }
-    return None
+    return {"ticker_bi": ticker, "isin": isin, "source_url": detail_url}
 
-SOURCES = [
-    ("Yahoo", search_yahoo),
-    ("JustETF", search_justetf),
-    ("Borsa Italiana", lambda n: search_generic(n, "Borsa Italiana", "https://www.borsaitaliana.it/borsa/etf/lista.html?search={query}")),
-    ("Euronext", lambda n: search_generic(n, "Euronext", "https://live.euronext.com/en/search_instruments/{query}")),
-    ("Xetra", lambda n: search_generic(n, "Xetra", "https://www.xetra.com/xetra-en/instruments/etf-finder/{query}")),
-    ("Investing", lambda n: search_generic(n, "Investing.com", "https://www.investing.com/search/?q={query}")),
-    ("Morningstar", lambda n: search_generic(n, "Morningstar", "https://www.morningstar.it/it/funds/snapshot/snapshot.aspx?id={query}")),
-]
+SOURCES = [("JustETF", search_justetf),]
 
 df = pd.read_csv("ETF_list.csv")
 if "Ticker" not in df.columns: df["Ticker"] = ""
