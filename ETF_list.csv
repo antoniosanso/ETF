@@ -1,5 +1,5 @@
 ETF;Provider;ISIN;Total Expense Ratio (%);Trading Currency;Xetra symbol;Ticker;Theme
-Alerian Midstream Energy Dividend UCITS ETF Dist;HANetf;IE00BKPTXQ89;0,49%;EUR;JMLP;;
+Alerian Midstream Energy Dividend UCITS ETF Dist;HANetf;IE00BKPTXQ89;0,49%;EUR;JMLP;;;
 Amundi Australia S&P/ASX 200 UCITS ETF Dist;Amundi;LU0496786905;0,40%;EUR;LYPU;;
 Amundi Bloomberg Equal-weight Commodity ex-Agriculture  UCITS ETF Acc;Amundi;LU1829218749;0,30%;EUR;LYTR;;
 Amundi Bloomberg Equal-weight Commodity ex-Agriculture  UCITS ETF EUR Hedged Acc;Amundi;LU1900069219;0,35%;EUR;C099;;
@@ -2371,5 +2371,6 @@ Xtrackers USD High Yield Corporate Bond UCITS ETF 2C - EUR Hedged;Xtrackers;IE00
 Xtrackers Vietnam Swap UCITS ETF 1C;Xtrackers;LU0322252924;0,85%;EUR;XFVT;;
 Xtrackers World Biodiversity Focus SRI UCITS ETF 1C;Xtrackers;IE000E0V65D8;0,30%;EUR;XBI0;;
 Xtrackers World Net Zero Pathway Paris Aligned UCITS ETF;Xtrackers;IE000UZCJS58;0,19%;EUR;XNZW;;
+
 
 
