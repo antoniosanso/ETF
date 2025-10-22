@@ -1,0 +1,35 @@
+name: Enrich ETF List
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'  # ogni lunedì alle 6 CET
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 pandas yfinance lxml
+
+      - name: Run enrichment script
+        run: python scripts/enrich_etf_list.py
+
+      - name: Commit updated CSV
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          if [ -n "$(git status --porcelain ETF_list.csv)" ]; then
+            git add ETF_list.csv
+            git commit -m "Auto-update ETF list with real tickers/ISINs"
+            git push
+          fi
