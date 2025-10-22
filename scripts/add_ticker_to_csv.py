@@ -34,7 +34,6 @@ def search_justetf(isin):
     if not html:
         return None
     soup = BeautifulSoup(html, "lxml")
-    text = soup.get_text(" ", strip=True)
     t = soup.find(string=re.compile("Ticker"))
     if t:
         nxt = t.find_next()
@@ -75,18 +74,19 @@ def main():
     df.columns = [c.strip().lower() for c in df.columns]
 
     if "isin" not in df.columns:
-        raise ValueError("❌ Nessuna colonna ISIN trovata nel file.")
+        raise ValueError(f"❌ Colonna ISIN non trovata. Colonne presenti: {df.columns.tolist()}")
 
+    # aggiungi colonna Ticker se non esiste
     if "ticker" not in df.columns:
         df["Ticker"] = ""
 
-    print(f"📊 {len(df)} ETF trovati nel file. Avvio ricerca ticker online...")
+    print(f"📊 {len(df)} ETF trovati nel file. Avvio ricerca ticker...")
 
     for i, row in df.iterrows():
         isin = str(row["isin"]).strip()
-        if not isin or not isinstance(isin, str):
+        if not isin:
             continue
-        if df.at[i, "Ticker"]:
+        if isinstance(row.get("Ticker"), str) and row.get("Ticker").strip():
             continue  # già presente
         print(f"🔍 Ricerca per {isin} ...")
         ticker = find_ticker(isin)
@@ -94,7 +94,7 @@ def main():
         print(f" → {ticker if ticker else 'Nessun risultato'}")
 
     df.to_csv(filename, sep=sep, index=False)
-    print(f"✅ Aggiornato {filename} con la colonna Ticker.")
+    print(f"✅ File aggiornato: {filename}")
 
 if __name__ == "__main__":
     main()
