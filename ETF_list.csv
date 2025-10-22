@@ -1,4 +1,4 @@
-﻿provider,name,ticker_bi,isin,venue,quote_ccy,base_ccy,eur_hedged,theme,source_url;;;;;;;;;;
+﻿provider,Name,ticker_bi,isin,venue,quote_ccy,base_ccy,eur_hedged,theme,source_url;;;;;;;;;;
 VanEck,VanEck UCITS ETF Clean Energy Acc,ETF001.MI,IE00AUTO001,Euronext,EUR,USD,No,Commodity,https://www.euronext.com/;;;;;;;;;;
 VanEck,VanEck UCITS ETF Clean Energy Acc,ETF002.MI,IE00AUTO002,Euronext,EUR,USD,Yes,Multi Asset,https://www.xetra.com/;;;;;;;;;;
 Xtrackers,Xtrackers UCITS ETF AI & Big Data Acc,ETF003.MI,IE00AUTO003,Euronext,EUR,USD,Yes,Dividend,https://www.xetra.com/;;;;;;;;;;
@@ -399,3 +399,4 @@ WisdomTree,WisdomTree UCITS ETF Money Market Acc,ETF397.MI,IE00AUTO397,Borsa Ita
 SPDR,SPDR UCITS ETF AI & Big Data Acc,ETF398.MI,IE00AUTO398,Borsa Italiana,EUR,USD,No,Dividend,https://www.borsaitaliana.it/;;;;;;;;;;
 SPDR,SPDR UCITS ETF Water Acc,ETF399.MI,IE00AUTO399,Xetra,EUR,EUR,No,Momentum,https://www.xetra.com/;;;;;;;;;;
 Global X,Global X UCITS ETF Luxury Acc,ETF400.MI,IE00AUTO400,Euronext,EUR,EUR,No,Space,https://www.euronext.com/;;;;;;;;;;
+
