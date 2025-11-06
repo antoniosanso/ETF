@@ -57,6 +57,10 @@ def resolve_symbol(ticker:str, mapping:dict)->tuple[str, str, str]:
     return "", "", ""
 
 def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
+    """
+    Scarica lo storico giornaliero da Yahoo Finance e garantisce sempre una colonna 'close'.
+    Gestisce anche casi senza 'Adj Close' o 'Close' (es. ETF illiquidi o nuovi).
+    """
     df = yf.download(
         sym,
         start=str(START_DATE),
@@ -66,29 +70,34 @@ def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
         threads=False,
         group_by="column",
     )
-    if df.empty:
+    if df is None or df.empty:
         return pd.DataFrame()
 
     df = df.reset_index().rename(columns={"Date": "date"})
 
+    # Individua la miglior colonna di prezzo disponibile
     close_series = None
-    if "Adj Close" in df.columns:
-        adj = df["Adj Close"]
-        # se per qualche motivo è un DataFrame, prendo la prima colonna
-        if isinstance(adj, pd.DataFrame):
-            adj = adj.iloc[:, 0]
-        if not pd.isna(adj).all():
-            close_series = adj
+    for col in ["Adj Close", "Close", "close", "Price", "Last", "Value"]:
+        if col in df.columns:
+            series = df[col]
+            if isinstance(series, pd.DataFrame):
+                series = series.iloc[:, 0]
+            if not pd.isna(series).all():
+                close_series = series
+                break
 
+    # Se non esiste nessuna colonna prezzo, esci
     if close_series is None:
-        close_series = df["Close"]
-        if isinstance(close_series, pd.DataFrame):
-            close_series = close_series.iloc[:, 0]
+        print(f"[WARN] {sym}: nessuna colonna di prezzo trovata.")
+        return pd.DataFrame()
 
     df["close"] = pd.to_numeric(close_series, errors="coerce")
-    df["date"] = pd.to_datetime(df["date"]).dt.date.astype(str)
+    df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.date.astype(str)
     df = df.dropna(subset=["close"])
 
+    # Torna sempre con date/close puliti
+    if "close" not in df.columns:
+        return pd.DataFrame()
     return df[["date", "close"]]
 
 def fetch_meta(sym: str) -> tuple[str, str]:
