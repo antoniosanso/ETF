@@ -58,46 +58,66 @@ def resolve_symbol(ticker:str, mapping:dict)->tuple[str, str, str]:
 
 def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
     """
-    Scarica lo storico giornaliero da Yahoo Finance e garantisce sempre una colonna 'close'.
-    Gestisce anche casi senza 'Adj Close' o 'Close' (es. ETF illiquidi o nuovi).
+    Scarica lo storico 1D e garantisce (se possibile) una singola colonna 'close'.
+    Nessun KeyError anche se Yahoo non espone colonne prezzo standard.
     """
-    df = yf.download(
-        sym,
-        start=str(START_DATE),
-        progress=False,
-        interval="1d",
-        auto_adjust=False,
-        threads=False,
-        group_by="column",
-    )
-    if df is None or df.empty:
+    try:
+        df = yf.download(
+            sym,
+            start=str(START_DATE),
+            interval="1d",
+            auto_adjust=False,
+            progress=False,
+            threads=False,
+            group_by="column",
+        )
+    except Exception as e:
+        print(f"[WARN] {sym}: download failed ({e})")
         return pd.DataFrame()
 
-    df = df.reset_index().rename(columns={"Date": "date"})
+    if df is None or df.empty:
+        print(f"[WARN] {sym}: empty dataframe from Yahoo.")
+        return pd.DataFrame()
 
-    # Individua la miglior colonna di prezzo disponibile
+    # Normalizza indice/colonne
+    if "Date" in df.columns:  # a volte la data è colonna (non indice)
+        df = df.rename(columns={"Date": "date"})
+    else:
+        df = df.reset_index().rename(columns={"Date": "date"})
+    if "date" not in df.columns:
+        # estrema difesa: prova a promuovere l'indice a 'date'
+        df.insert(0, "date", df.index)
+
+    # Trova una colonna prezzo utilizzabile
     close_series = None
-    for col in ["Adj Close", "Close", "close", "Price", "Last", "Value"]:
-        if col in df.columns:
-            series = df[col]
-            if isinstance(series, pd.DataFrame):
-                series = series.iloc[:, 0]
-            if not pd.isna(series).all():
-                close_series = series
+    for cand in ["Adj Close", "Close", "close", "Price", "Last", "Value", "Close*"]:
+        if cand in df.columns:
+            s = df[cand]
+            # Se per qualche motivo è un DataFrame multi-colonna, prendi la prima
+            if isinstance(s, pd.DataFrame):
+                if s.shape[1] == 0:
+                    continue
+                s = s.iloc[:, 0]
+            if not pd.isna(s).all():
+                close_series = s
                 break
 
-    # Se non esiste nessuna colonna prezzo, esci
     if close_series is None:
-        print(f"[WARN] {sym}: nessuna colonna di prezzo trovata.")
+        print(f"[WARN] {sym}: no usable price column (Adj Close/Close/Price...).")
         return pd.DataFrame()
 
+    # Crea SEMPRE 'close'
     df["close"] = pd.to_numeric(close_series, errors="coerce")
+    # Pulisci date
     df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.date.astype(str)
-    df = df.dropna(subset=["close"])
 
-    # Torna sempre con date/close puliti
+    # Se per qualche motivo 'close' non è stata creata (non dovrebbe), esci
     if "close" not in df.columns:
+        print(f"[WARN] {sym}: 'close' column missing after normalization.")
         return pd.DataFrame()
+
+    # Drop solo se la colonna esiste (ora esiste) e non genera KeyError
+    df = df.dropna(subset=["close"])
     return df[["date", "close"]]
 
 def fetch_meta(sym: str) -> tuple[str, str]:
