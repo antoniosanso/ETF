@@ -24,6 +24,7 @@ jobs:
           ETF_CSV: ETF.csv
           MAP_CSV: yahoo_map.csv
           OUT_CSV: datasets/investing_history.csv
+          YAHOO_SUFFIX_ORDER: ".MI,.AS,.PA,.DE,.IR,"   # .MI PRIMA DI TUTTO
         run: python scripts/fetch_yahoo_v4.py
       - name: Commit dataset
         run: |
