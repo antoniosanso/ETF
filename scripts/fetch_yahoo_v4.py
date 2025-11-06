@@ -57,50 +57,73 @@ def resolve_symbol(ticker:str, mapping:dict)->tuple[str, str, str]:
     return "", "", ""
 
 def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
-    df = yf.download(sym, start=str(START_DATE), progress=False, interval="1d", auto_adjust=False)
+    df = yf.download(
+        sym,
+        start=str(START_DATE),
+        progress=False,
+        interval="1d",
+        auto_adjust=False,
+        threads=False,
+        group_by="column",
+    )
     if df.empty:
         return pd.DataFrame()
+
     df = df.reset_index().rename(columns={"Date": "date"})
-    # crea SEMPRE una sola colonna 'close'
-    if "Adj Close" in df.columns and not df["Adj Close"].isna().all():
-        df["close"] = df["Adj Close"]
-    else:
-        df["close"] = df["Close"]
+
+    close_series = None
+    if "Adj Close" in df.columns:
+        adj = df["Adj Close"]
+        # se per qualche motivo è un DataFrame, prendo la prima colonna
+        if isinstance(adj, pd.DataFrame):
+            adj = adj.iloc[:, 0]
+        if not pd.isna(adj).all():
+            close_series = adj
+
+    if close_series is None:
+        close_series = df["Close"]
+        if isinstance(close_series, pd.DataFrame):
+            close_series = close_series.iloc[:, 0]
+
+    df["close"] = pd.to_numeric(close_series, errors="coerce")
     df["date"] = pd.to_datetime(df["date"]).dt.date.astype(str)
+    df = df.dropna(subset=["close"])
+
     return df[["date", "close"]]
 
 def fetch_meta(sym: str) -> tuple[str, str]:
     """
-    Ritorna (sector, currency). Per ETFs Yahoo spesso non ha 'sector':
-    uso 'category' / 'fundCategory' e, come fallback, provo ad estrarre
-    dal 'longName' (es. 'WisdomTree ... 3x Daily Leveraged').
+    Ritorna (sector, currency). Per ETF/ETP Yahoo spesso non ha 'sector':
+    uso 'category' o 'fundCategory'; fallback grezzo dal 'longName'.
     """
     sector, currency = "", ""
     tk = yf.Ticker(sym)
+
     # currency veloce
     try:
         fi = tk.fast_info
         currency = getattr(fi, "currency", "") or ""
     except Exception:
         pass
-    # dettagli lenti
+
+    # dettagli (lenti)
     try:
         info = tk.info or {}
         currency = info.get("currency") or currency or ""
-        sector = (
-            info.get("category")
-            or info.get("fundCategory")
-            or ""
-        )
+        sector = info.get("category") or info.get("fundCategory") or ""
         if not sector:
-            ln = (info.get("longName") or "")[:80].lower()
-            # estrazioni molto basilari; puoi ampliarle se vuoi
-            for key in ["banks", "oil", "gold", "copper", "coffee", "euro stoxx 50", "dax", "emerging markets", "bund", "btp"]:
-                if key in ln:
-                    sector = key.title()
+            ln = (info.get("longName") or "").lower()
+            keys = [
+                "banks","oil","gold","copper","coffee",
+                "euro stoxx 50","dax","emerging markets","bund","btp","ftse 100"
+            ]
+            for k in keys:
+                if k in ln:
+                    sector = k.title()
                     break
     except Exception:
         pass
+
     return sector, currency
 
 def main():
