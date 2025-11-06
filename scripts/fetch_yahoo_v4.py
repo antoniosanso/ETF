@@ -19,14 +19,26 @@ def load_mapping(path:str)->dict:
             m[t] = {"yahoo": y, "sector": sector, "currency": curr}
     return m
 
-def guess_yahoo_symbol(ticker:str)->list:
-    # Heuristic: WisdomTree/Boost ETPs Italy usually have .MI
-    cands = []
-    if ticker and ticker[0].isdigit():
-        cands.append(f"{ticker}.MI")
-    # other exchanges fallbacks
-    cands += [f"{ticker}.AS", f"{ticker}.PA", f"{ticker}.DE", f"{ticker}.IR", ticker]
-    return cands
+def guess_yahoo_symbol(ticker: str) -> list:
+    """
+    Prova i suffissi Yahoo nell'ordine specificato da env YAHOO_SUFFIX_ORDER.
+    Default: .MI, .AS, .PA, .DE, .IR, (nessun suffisso).
+    """
+    order_env = os.environ.get("YAHOO_SUFFIX_ORDER", ".MI,.AS,.PA,.DE,.IR,")
+    suffixes = [s.strip() for s in order_env.split(",") if s is not None]
+
+    candidates = []
+    for suf in suffixes:
+        if suf == "":   # caso 'nessun suffisso'
+            candidates.append(ticker)
+        else:
+            candidates.append(f"{ticker}{suf}")
+    # de-dup preservando l’ordine
+    seen, uniq = set(), []
+    for c in candidates:
+        if c and c not in seen:
+            uniq.append(c); seen.add(c)
+    return uniq
 
 def resolve_symbol(ticker:str, mapping:dict)->tuple[str, str, str]:
     # returns (symbol, sector, currency_override)
