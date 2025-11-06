@@ -4,53 +4,45 @@ import os, sys, datetime as dt
 import pandas as pd
 import yfinance as yf
 
-START_DATE = dt.date(2010,1,1)
+START_DATE = dt.date(2010, 1, 1)
 
-def load_mapping(path:str)->dict:
+def guess_order_from_env() -> list[str]:
+    # Priorità ai simboli di Milano .MI (puoi cambiare via env)
+    order_env = os.environ.get("YAHOO_SUFFIX_ORDER", ".MI,.AS,.PA,.DE,.IR,")
+    suffixes = [s.strip() for s in order_env.split(",")]
+    return suffixes
+
+def load_mapping(path: str) -> dict:
     if not os.path.exists(path): return {}
     df = pd.read_csv(path)
-    m = {}
-    for _,r in df.iterrows():
+    out = {}
+    for _, r in df.iterrows():
         t = str(r["ticker"]).strip()
-        y = str(r["yahoo"]).strip() if not pd.isna(r["yahoo"]) else ""
-        sector = "" if pd.isna(r.get("sector","")) else str(r.get("sector",""))
-        curr = "" if pd.isna(r.get("currency","")) else str(r.get("currency",""))
-        if t:
-            m[t] = {"yahoo": y, "sector": sector, "currency": curr}
-    return m
+        out[t] = {
+            "yahoo": ("" if pd.isna(r.get("yahoo","")) else str(r["yahoo"]).strip()),
+            "sector": ("" if pd.isna(r.get("sector","")) else str(r["sector"]).strip()),
+            "currency": ("" if pd.isna(r.get("currency","")) else str(r["currency"]).strip()),
+        }
+    return out
 
-def guess_yahoo_symbol(ticker: str) -> list:
-    """
-    Prova i suffissi Yahoo nell'ordine specificato da env YAHOO_SUFFIX_ORDER.
-    Default: .MI, .AS, .PA, .DE, .IR, (nessun suffisso).
-    """
-    order_env = os.environ.get("YAHOO_SUFFIX_ORDER", ".MI,.AS,.PA,.DE,.IR,")
-    suffixes = [s.strip() for s in order_env.split(",") if s is not None]
-
-    candidates = []
-    for suf in suffixes:
-        if suf == "":   # caso 'nessun suffisso'
-            candidates.append(ticker)
-        else:
-            candidates.append(f"{ticker}{suf}")
-    # de-dup preservando l’ordine
+def resolve_symbol(ticker: str, mapping: dict) -> tuple[str, str, str]:
+    """Ritorna (yahoo_symbol, sector_hint, currency_hint)."""
+    if ticker in mapping and mapping[ticker]["yahoo"]:
+        m = mapping[ticker]
+        return m["yahoo"], m.get("sector",""), m.get("currency","")
+    cands = []
+    for suf in guess_order_from_env():
+        cands.append(f"{ticker}{suf}" if suf != "" else ticker)
+    # de-dup
     seen, uniq = set(), []
-    for c in candidates:
+    for c in cands:
         if c and c not in seen:
             uniq.append(c); seen.add(c)
-    return uniq
-
-def resolve_symbol(ticker:str, mapping:dict)->tuple[str, str, str]:
-    # returns (symbol, sector, currency_override)
-    info = mapping.get(ticker, {})
-    if info and info.get("yahoo"):
-        return info["yahoo"], info.get("sector",""), info.get("currency","")
-    # try heuristics
-    for sym in guess_yahoo_symbol(ticker):
-        tk = yf.Ticker(sym)
+    for sym in uniq:
         try:
-            qi = tk.fast_info  # cheap probe
-            if qi is not None and getattr(qi,"last_price", None) is not None:
+            tk = yf.Ticker(sym)
+            fi = tk.fast_info
+            if getattr(fi, "last_price", None) is not None:
                 return sym, "", ""
         except Exception:
             pass
@@ -58,8 +50,8 @@ def resolve_symbol(ticker:str, mapping:dict)->tuple[str, str, str]:
 
 def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
     """
-    Scarica lo storico 1D e garantisce (se possibile) una singola colonna 'close'.
-    Nessun KeyError anche se Yahoo non espone colonne prezzo standard.
+    Scarica lo storico 1D e crea SEMPRE una singola colonna 'close' se esiste
+    almeno una colonna di prezzo utilizzabile.
     """
     try:
         df = yf.download(
@@ -79,13 +71,12 @@ def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
         print(f"[WARN] {sym}: empty dataframe from Yahoo.")
         return pd.DataFrame()
 
-    # Normalizza indice/colonne
-    if "Date" in df.columns:  # a volte la data è colonna (non indice)
+    # Porta la data a colonna 'date'
+    if "Date" in df.columns:
         df = df.rename(columns={"Date": "date"})
     else:
         df = df.reset_index().rename(columns={"Date": "date"})
     if "date" not in df.columns:
-        # estrema difesa: prova a promuovere l'indice a 'date'
         df.insert(0, "date", df.index)
 
     # Trova una colonna prezzo utilizzabile
@@ -93,7 +84,6 @@ def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
     for cand in ["Adj Close", "Close", "close", "Price", "Last", "Value", "Close*"]:
         if cand in df.columns:
             s = df[cand]
-            # Se per qualche motivo è un DataFrame multi-colonna, prendi la prima
             if isinstance(s, pd.DataFrame):
                 if s.shape[1] == 0:
                     continue
@@ -106,65 +96,43 @@ def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
         print(f"[WARN] {sym}: no usable price column (Adj Close/Close/Price...).")
         return pd.DataFrame()
 
-    # Crea SEMPRE 'close'
     df["close"] = pd.to_numeric(close_series, errors="coerce")
-    # Pulisci date
     df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.date.astype(str)
-
-    # Se per qualche motivo 'close' non è stata creata (non dovrebbe), esci
-    if "close" not in df.columns:
-        print(f"[WARN] {sym}: 'close' column missing after normalization.")
-        return pd.DataFrame()
-
-    # Drop solo se la colonna esiste (ora esiste) e non genera KeyError
-    df = df.dropna(subset=["close"])
+    df = df[df["close"].notna()]           # ← nessun KeyError; filtra solo se 'close' esiste
     return df[["date", "close"]]
 
 def fetch_meta(sym: str) -> tuple[str, str]:
-    """
-    Ritorna (sector, currency). Per ETF/ETP Yahoo spesso non ha 'sector':
-    uso 'category' o 'fundCategory'; fallback grezzo dal 'longName'.
-    """
+    """Ritorna (sector, currency) da Yahoo con fallback."""
     sector, currency = "", ""
     tk = yf.Ticker(sym)
-
-    # currency veloce
     try:
         fi = tk.fast_info
         currency = getattr(fi, "currency", "") or ""
     except Exception:
         pass
-
-    # dettagli (lenti)
     try:
         info = tk.info or {}
         currency = info.get("currency") or currency or ""
         sector = info.get("category") or info.get("fundCategory") or ""
         if not sector:
             ln = (info.get("longName") or "").lower()
-            keys = [
-                "banks","oil","gold","copper","coffee",
-                "euro stoxx 50","dax","emerging markets","bund","btp","ftse 100"
-            ]
-            for k in keys:
+            for k in ["banks","oil","gold","copper","coffee","euro stoxx 50","dax","emerging markets","bund","btp","ftse 100"]:
                 if k in ln:
-                    sector = k.title()
-                    break
+                    sector = k.title(); break
     except Exception:
         pass
-
     return sector, currency
 
 def main():
-    etf_csv = os.environ.get("ETF_CSV","ETF.csv")
-    map_csv = os.environ.get("MAP_CSV","yahoo_map.csv")
-    out_csv = os.environ.get("OUT_CSV","datasets/investing_history.csv")
+    etf_csv = os.environ.get("ETF_CSV", "ETF.csv")
+    map_csv = os.environ.get("MAP_CSV", "yahoo_map.csv")
+    out_csv = os.environ.get("OUT_CSV", "datasets/investing_history.csv")
     os.makedirs(os.path.dirname(out_csv), exist_ok=True)
 
     universe = pd.read_csv(etf_csv)
     mapping = load_mapping(map_csv)
 
-    all_rows = []
+    parts = []
     for _, r in universe.iterrows():
         name = str(r["name"])
         ticker = str(r["ticker"]).strip()
@@ -174,26 +142,27 @@ def main():
             print(f"[WARN] {ticker}: no Yahoo symbol found. Skipping.")
             continue
         print(f"[INFO] {ticker}: using {sym}", flush=True)
+
         hist = fetch_history_for_symbol(sym)
         if hist.empty:
             print(f"[WARN] {ticker}: empty history for {sym}.")
             continue
+
         sector, currency = fetch_meta(sym)
-        if not sector: sector = sector_hint
+        if not sector:   sector = sector_hint
         if not currency: currency = curr_hint or "EUR"
 
         hist["name"] = name
         hist["ticker"] = ticker
         hist["sector"] = sector
         hist["currency"] = currency
-        hist = hist[["name","ticker","date","close","sector","currency"]]
-        all_rows.append(hist)
+        parts.append(hist[["name","ticker","date","close","sector","currency"]])
 
-    if not all_rows:
+    if not parts:
         print("Error: no data fetched.", file=sys.stderr)
         sys.exit(1)
 
-    out = pd.concat(all_rows, ignore_index=True).sort_values(["ticker","date"])
+    out = pd.concat(parts, ignore_index=True).sort_values(["ticker","date"])
     out.to_csv(out_csv, index=False, encoding="utf-8")
     print(f"[OK] saved {len(out)} rows -> {out_csv}")
 
