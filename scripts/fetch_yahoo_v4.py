@@ -56,34 +56,52 @@ def resolve_symbol(ticker:str, mapping:dict)->tuple[str, str, str]:
             pass
     return "", "", ""
 
-def fetch_history_for_symbol(sym:str)->pd.DataFrame:
+def fetch_history_for_symbol(sym: str) -> pd.DataFrame:
     df = yf.download(sym, start=str(START_DATE), progress=False, interval="1d", auto_adjust=False)
     if df.empty:
         return pd.DataFrame()
-    df = df.reset_index().rename(columns={"Date":"date","Adj Close":"close","Adj Close":"close"})
-    if "Adj Close" in df.columns:
+    df = df.reset_index().rename(columns={"Date": "date"})
+    # crea SEMPRE una sola colonna 'close'
+    if "Adj Close" in df.columns and not df["Adj Close"].isna().all():
         df["close"] = df["Adj Close"]
-    elif "Close" in df.columns:
+    else:
         df["close"] = df["Close"]
-    df["date"] = df["date"].dt.date.astype(str)
-    return df[["date","close"]]
+    df["date"] = pd.to_datetime(df["date"]).dt.date.astype(str)
+    return df[["date", "close"]]
 
-def fetch_meta(sym:str)->tuple[str,str]:
+def fetch_meta(sym: str) -> tuple[str, str]:
+    """
+    Ritorna (sector, currency). Per ETFs Yahoo spesso non ha 'sector':
+    uso 'category' / 'fundCategory' e, come fallback, provo ad estrarre
+    dal 'longName' (es. 'WisdomTree ... 3x Daily Leveraged').
+    """
+    sector, currency = "", ""
+    tk = yf.Ticker(sym)
+    # currency veloce
     try:
-        tk = yf.Ticker(sym)
-        info = tk.fast_info
-        currency = getattr(info,"currency", None) or ""
-        # sector can be empty for ETFs; try longBusinessSummary as fallback (not ideal)
-        sector = ""
-        try:
-            meta = tk.info
-            sector = meta.get("category") or meta.get("sector") or ""
-            currency = (meta.get("currency") or currency) or ""
-        except Exception:
-            pass
-        return sector, currency
+        fi = tk.fast_info
+        currency = getattr(fi, "currency", "") or ""
     except Exception:
-        return "", ""
+        pass
+    # dettagli lenti
+    try:
+        info = tk.info or {}
+        currency = info.get("currency") or currency or ""
+        sector = (
+            info.get("category")
+            or info.get("fundCategory")
+            or ""
+        )
+        if not sector:
+            ln = (info.get("longName") or "")[:80].lower()
+            # estrazioni molto basilari; puoi ampliarle se vuoi
+            for key in ["banks", "oil", "gold", "copper", "coffee", "euro stoxx 50", "dax", "emerging markets", "bund", "btp"]:
+                if key in ln:
+                    sector = key.title()
+                    break
+    except Exception:
+        pass
+    return sector, currency
 
 def main():
     etf_csv = os.environ.get("ETF_CSV","ETF.csv")
