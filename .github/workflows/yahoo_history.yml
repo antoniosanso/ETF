@@ -1,4 +1,4 @@
-name: Yahoo Finance History (from 2010-01-01)
+name: ETF Historical Prices (from 2010-01-01)
 
 on:
   workflow_dispatch:
