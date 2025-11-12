@@ -1,7 +1,4 @@
 name,ticker
-Amundi MSCI World Information Technology UCITS ETF,TNOW
-Xtrackers Artificial Intelligence & Big Data UCITS ETF 1C,XAIX
-Amundi ETF Nasdaq-100 UCITS,ANX
 Alerian Midstream Energy Dividend,MMLP
 Amundi Bloomberg Equal-weight Commodity ex-Agricul,COMH
 Amundi CAC 40 UCITS,C40
@@ -51,3 +48,955 @@ Amundi Index Solutions - Amundi Prime Eurozone UCI,ETFEZ
 Amundi Index Solutions - Amundi Prime Global Govie,ETFGG
 Amundi Index Solutions - Amundi Prime Japan UCITS,ETFJAP
 Amundi Index Solutions - Amundi Prime US Treasury,ETFUST
+Amundi Index Solutions - Amundi Smart City UCITS E,SCITY
+Amundi Index Solutions Barclays Euro AGG Corporate,ECRPI
+Amundi Index Solutions Barclays Euro Corp BBB 1-5,EBBB
+Amundi Index Solutions Barclays Global AGG 500M DR,GAGG
+Amundi Index Solutions Barclays US Corp BBB 1-5 DR,UBBB
+Amundi Index Solutions FTSE EPRA NAREIT Global DR,EPRA
+Amundi Index Solutions J.P. Morgan GBI Global Govi,GGOVI
+Amundi Index Solutions JP Morgan EMU Govies 1-10 D,EGOVI
+Amundi Index Solutions MSCI Europe DR,CEU2
+Amundi IS Global EmBdMrkt IBOXX D,EMKTB
+Amundi Italy BTP Government Bond 10Y UCITS Acc,BTP10
+Amundi MSCI AC Asia Ex Japan UCITS ETF Acc,LAPEX
+Amundi MSCI AC Asia Pacific Ex Japan UCITS ETF Acc,AEJ
+Amundi MSCI Brazil UCITS ETF Acc,BRA
+Amundi MSCI China Tech ESG Screened UCITS EUR Acc,CC1
+Amundi MSCI EM Asia UCITS,AASI
+Amundi MSCI EM Latin America UCITS,ALAT
+Amundi MSCI Emerging Markets III UCITS ETF EUR,EMKT
+Amundi MSCI EMU Small Cap ESG CTB Net Zero Ambitio,MSSM
+Amundi MSCI EMU UCITS,CMU
+Amundi MSCI Europe ESG Selection UCITS ETF A,ESGE
+Amundi MSCI Europe II UCITS Acc,MEU
+Amundi MSCI Europe Quality Factor,QCEU
+Amundi MSCI Europe UCITS EUR,CEU
+Amundi MSCI Greece UCITS Dist,LGRE
+Amundi MSCI India II UCITS EUR Acc,INDI
+Amundi MSCI India UCITS,CI2
+Amundi MSCI Semiconductors UCITS ETF Acc,CHIPL
+Amundi MSCI Turkey UCITS ETF Acc,LTUR
+Amundi MSCI USA ESG Climate Net Zero Ambition CTB,LUSA
+Amundi MSCI USA ESG Leaders Extra UCITS ETF Dis,UESG
+AMUNDI MSCI USA SRI Climate Net Zero Ambition PAB,USRI
+Amundi MSCI USA UCITS,CU2
+Amundi MSCI Water ESG Screened UCITS Dist,H2O
+Amundi MSCI World ESG Climate Net Zero Ambition CT,LWCR
+Amundi MSCI World Financials UCITS ETF EUR Acc,LFINSW
+Amundi MSCI World Health Care UCITS ETF EUR Acc,LHLTW
+Amundi MSCI World II UCITS ETF,WLD
+Amundi MSCI World Information Technology UCITS ETF,LTNOW
+Amundi MSCI World SRI Climate Net Zero Ambition PA,WSRI
+Amundi MSCI World UCITS,CW8
+Amundi MSCI World UCITS DR USD Acc,MWRD
+Amundi Pan Africa UCITS ETF Acc,LAFRI
+Amundi Prime USA UCITS Dis,ETFUSA
+Amundi S&P 500 ESG UCITS Acc EUR,S500
+Amundi S&P 500 EUR Hedged Daily UCITS,500H
+Amundi S&P 500 UCITS,A500
+Amundi S&P 500 UCITS ETF - D-EUR,LYXSP
+Amundi S&P 500 VIX Futures Enhanced Roll UCITS Acc,LVO
+Amundi SP 500 Buyback EUR UCITS,B500
+Amundi STOXX Europe 600 Banks UCITS Acc,LYXBNK
+Amundi STOXX Europe 600 Basic Materials UCITS Acc,CHM
+Amundi STOXX Europe 600 Consumer Discretionary UCI,TRVL
+Amundi STOXX Europe 600 Energy ESG Screened UCITS,ENRG
+Amundi STOXX Europe 600 Industrials UCITS Acc,INDG
+Amundi STOXX Europe 600 Insurance UCITS Acc,LYYQ
+Amundi STOXX Europe 600 Telecommunications UCITS A,TELE
+Amundi Stoxx Europe 600 UCITS C,MEUD
+Amundi Stoxx Europe Select Dividend 30 UCITS D,SEL
+Amundi Stoxx Global Artificial Intelligence,GOAI
+Amundi USD Corporate Bond PAB Net Zero Ambition UC,USIH
+Amundi USD Corporate Bond PAB Net Zero Ambition UC,USIG
+BetaBuilders US Equity UCITS USD Acc,BBUS
+BNP PARIBAS EASY - ECPI Global ESG Blue Economy ET,OCEAN
+BNP Paribas Easy Bloomberg-Barclays Euro Aggregate,JBEM
+BNP Paribas Easy ECPI Circular Economy Leaders UCI,REUSE
+BNP Paribas Easy Equity Low Vol Europe UCITS ETF C,EVOE
+BNP Paribas Easy Equity Value Europe UCITS ETF Cap,EVAE
+BNP Paribas Easy FTSE EPRA Nareit Developed Europe,GREAL
+BNP Paribas Easy MSCI Emerging Markets ex CW UCITS,EEMK
+BNP Paribas Easy MSCI Emerging Markets SRI UCITS E,EISR
+BNP Paribas Easy MSCI EMU Ex CW UCITS,EEMU
+BNP Paribas Easy MSCI Europe SRI S-Series 5% Cappe,SRIE
+BNP Paribas Easy MSCI Jap ex CW UCITS,EJAH
+BNP Paribas Easy MSCI Japan SRI S-Series 5% Capped,SRIJ
+BNP Paribas Easy MSCI Pacific ex Japan ex CW UCITS,EPEJ
+BNP Paribas Easy MSCI USA SRI S-Series 5% Capped U,EKUS
+BNP Paribas Easy S&P 500 Hedge,ESEH
+BNP Paribas Easy SP 500 UCITS,ESEE
+BNPP Easy-EURO Corp Bond SRI Fossil Free UCITS,SRIC
+CMCI Composite SF UCITS (hedged to EUR) A-acc,CCEUAS
+db Physical Gold,XAD5
+db Physical Gold Euro Hedged,XAD1
+db Physical Platinum Euro Hedged,XAD3
+db Physical Silver,XAD6
+db Physical Silver Euro Hedged,XAD2
+db x-trackers CSI300 UCITS 1C,XCHA
+db x-trackers Euro Stoxx 50 (DR) 1C,XESC
+db x-trackers Euro Stoxx 50 Short Daily 1C,XSSX
+db x-trackers FTSE EPRA/NAREIT Developed Europe Re,XDER
+db x-trackers Harvest CSI300 UCITS DR,RQFI
+db x-trackers iBoxx USD EM Sovereigns Quality Weig,XQUE
+db x-trackers iBoxx USD EM Sovereigns Quality Weig,XQUA
+db x-trackers II Australia SSA Bonds UCITS 1C,XCS2
+db x-trackers II Barclays Global Aggregate Bond UC,XBAE
+db x-trackers II Barclays Global Aggregate Bond UC,XBAG
+db x-trackers II Global Inflation-Linked 1D,XGII
+db x-trackers II Global Sovereign EUR UCITS 5C,XG7S
+db x-trackers II Global Sovereign UCITS 1C,XGSH
+db x-trackers II Global Sovereign UCITS 1D,XGVD
+db x-trackers II Harvest CSI China Sovereign Bond,CGB
+db x-trackers II iBoxx $ Treasuries DR 2D,XUTE
+db x-trackers II iBoxx EUR 1-3Yr,XHY1
+db x-trackers II iBoxx EUR High,XHYG
+db x-trackers II iBoxx Global Inflation Linked UCI,XGIU
+db x-trackers II iBoxx Global Inflation-Linked UCI,XGIN
+db x-trackers II iBoxx Inflation-Linked UCITS 1C,XEIN
+db x-trackers II iBoxx Japan Sovereign UCITS 1C,XJSE
+db x-trackers II iBoxx Liquid Corporate Financials,XB4F
+db x-trackers II iBoxx Liquid Corporate UCITS 1C,XBLC
+db x-trackers II iBoxx Sovereign Eurozone Yield Pl,XYP1
+db x-trackers II iBoxx Sovereigns Eurozone 3-5 UCI,X35E
+db x-trackers II iBoxx Sovereigns Eurozone 5-7 UCI,X57E
+db x-trackers II iBoxx Sovereigns Eurozone UCITS 1,XGLE
+db x-trackers II iBoxx Sovereigns Eurozone Yield P,XY4P
+db x-trackers II iTraxx Crossover 5y Short UCITS,XTC5
+db x-trackers II MTS Ex-Bank of Italy BOT UCITS 1C,XBOT
+db x-trackers II Sterling Cash UCITS,XSTR
+db x-trackers IIEmerging Markets Liquid Eurobond U,XEMB
+db x-trackers MSCI AC Asia Ex Japan UCITS,XAXJ
+db x-trackers MSCI AC World UCITS DR,XMAW
+db x-trackers MSCI Brazil UCITS DR 1C,XMBR
+db x-trackers MSCI Canada UCITS 1C,XCAN
+db x-trackers MSCI EM Asia UCITS 1C,XMAS
+db x-trackers MSCI Emerging Markets UCITS,XMEM
+db x-trackers MSCI EMU Minimum Volatility UCITS,XMVE
+db x-trackers MSCI EMU UCITS DR,XD5E
+db x-trackers MSCI Europe Mid Cap UCITS DR 1C,XEUM
+db x-trackers MSCI Indonesia UCITS 1C,XMIN
+db x-trackers MSCI Japan UCITS 4C DR,XMK9
+db x-trackers MSCI Mexico UCITS DR 1C,XMEX
+db x-trackers MSCI Pacific Ex Japan UCITS 1C DR,XPXJ
+db x-trackers MSCI USA UCITS 1C,XMUS
+db x-trackers MSCI Wd Health Care,XDWH
+db x-trackers MSCI World 4C,XWEH
+db x-trackers MSCI World Consumer Discretionary 1C,XDWC
+db x-trackers MSCI World Consumer Staples DR 1C,XDWS
+db x-trackers MSCI World Financials DR 1C,XDWF
+db x-trackers MSCI World Industrials DR 1C,XDWI
+db x-trackers MSCI World Info Tech DR 1C,XDWT
+db x-trackers MSCI World Materials DR 1C,XDWM
+db x-trackers MSCI World Min Vol DR 1C,XDEB
+db x-trackers MSCI World Mom Factor DR 1C,XDEM
+db x-trackers MSCI World Telecom Services DR 1C,XWTS
+db x-trackers MSCI World UCITS 1C,XMWO
+db x-trackers MSCI World Utilities DR 1C,XDWU
+db x-trackers Nifty 50,XNIF
+db x-trackers Nikkei 225 UCITS DR,XDJP
+db x-trackers Portfolio Total Return UCITS 1C,XQUI
+db x-trackers Russell Midcap,XRSM
+db x-trackers S&P 500 2x Inverse Daily UCITS 1C,XT21
+db x-trackers S&P 500 2x Leveraged Daily UCITS 1C,XS2L
+db x-trackers S&P 500 UCITS 1C,XSPX
+db x-trackers SP 500 UCITS,XDPE
+db x-trackers STOXX Europe 600 UCITS DR 1C,XSX6
+db x-trackers STOXX Global Select Dividend 100 UCI,XGSD
+db x-trackers USD Corporate Bond DR 1D,XDGU
+EMQQ Emerging Markets Internet & Ecommerce UCITS A,EMQQ
+First Trust Cloud Computing UCITS ETF Class A USD,FSKY
+First Trust Indxx Innovative Transaction & Process,BLOK
+First Trust Nasdaq Cybersecurity UCITS ETF Class A,CIBR
+First Trust NYSE Arca Biotechnology UCITS ETF Clas,FBTA
+Franklin AC Asia ex Japan UCITS,FLQA
+Franklin Emerging Markets UCITS,FLXE
+Franklin Euro Green Bond UCITS,FLRG
+Franklin European Dividend UCITS,FLXD
+Franklin FTSE Brazil UCITS,FLXB
+Franklin FTSE China UCITS,FLXC
+Franklin FTSE India UCITS,FLXIG
+Franklin FTSE Korea UCITS,FLXK
+Franklin Global Dividend UCITS,FLXX
+Franklin Liberty Euro Short Maturity UCITS ETF EUR,FLESA
+Franklin S&P 500 Paris Aligned Climate,USPA
+Franklin STOXX Europe 600 Paris Aligned Climate UC,EUPA
+Franklin US Equity UCITS,FLXU
+Franklin USD Inv Grd Corp Bd UCITS ,FLUC
+Global Balanced Fund UCITS,ROE
+Gold Bullion Securities ETC,GBS
+Goldman Sachs Access China Government Bond UCITS E,CBND
+Goldman Sachs ActiveBeta Emerging Market Equity UC,GSEM
+Goldman Sachs ActiveBeta US Large Cap Equity UCITS,GSLC
+HAN-GINS Innovative Technologies UCITS ETF - Accum,ITEK
+Harbor Health Care UCITS - Accumulating,WELL
+Health Care S&P US Sector Source,XLVS
+HSBC Developed World Sustainable Equity,HSWD
+HSBC EURO STOXX 50 UCITS,H50E
+HSBC Europe Sustainable Equity UCITS,HSEU
+HSBC Hang Seng Tech,HSTE
+HSBC MSCI China A Inclusion UCITS,HMCA
+HSBC MSCI China UCITS,HMCH
+HSBC MSCI Emerging Markets UCITS,HMEM
+HSBC MSCI EUROPE UCITS,HMEU
+HSBC MSCI Indonesia UCITS,HIDD
+HSBC MSCI Japan UCITS,HMJD
+HSBC MSCI Pacific ex Japan UCITS,HMXJ
+HSBC MSCI Taiwan UCITS Capped,HTWN
+HSBC MSCI World UCITS,HMWD
+HSBC S&P 500 UCITS,HSPD
+HSBC USA Sustainable Equity,HSUD
+iClima Global Decarbonisation Enablers UCITS ETF A,CLMA
+Ind. S&P US Sel Sector Source,XLIS
+IndexIQ Factors Sustainable Corporate Euro Bond UC,IQEC
+IndexIQ Factors Sustainable Japan Equity Cap,IQJP
+Invesco AT1 Capital Bond EUR Hdg Dist,XAT1
+Invesco AT1 Capital Bond UCITS,IAT1
+Invesco AT1 Capital Bond UCITS Dist,AT1D
+Invesco Bloomberg Commodity UCITS Hdg,CMOE
+Invesco Communications S&P US Select Sector UCITS,XLCS
+Invesco Consumer Discretionary S&P US Select Secto,XLYS
+Invesco Elwood Global Blockchain UCITS Acc,INBCHN
+Invesco EQQQ NASDAQ-100 UCITS,EQQQ
+Invesco EQQQ NASDAQ-100 UCITS ETF (EUR Hdg),EQEU
+Invesco EQQQ NASDAQ-100 UCITS ETF Acc,EQAC
+Invesco EURO STOXX 50 UCITS,SDJE50
+Invesco EuroMTS Cash 3 Months UCITS,PPEU
+Invesco Financials S&P US Select Sector UCITS,XLFS
+Invesco FTSE Emerging Markets High Dividend Low Vo,EMHD
+Invesco FTSE RAFI Emerging Markets UCITS,PSDE
+Invesco FTSE RAFI Europe UCITS,PSRE
+Invesco FTSE RAFI US 1000 UCITS,PSRF
+Invesco Global Buyback Achievers UCITS,BUYB
+Invesco JPX-Nikkei 400,N400
+Invesco Morningstar US Energy Infrastructure MLP U,MLPD
+Invesco Morningstar US Energy Infrastructure MLP U,MLPS
+Invesco MSCI Emerging Markets UCITS,MXFS
+Invesco MSCI Europe ESG Leaders Catholic Principle,ICFP
+Invesco MSCI Europe ESG Universal Screened UCITS,EEUR
+Invesco MSCI Europe UCITS ETF Acc,SMSEUR
+Invesco MSCI USA ESG Universal Screened,ESGU
+Invesco MSCI World ESG Unvsl Screened UCITS,ESGW
+Invesco MSCI World UCITS,SMSWLD
+Invesco NASDAQ Biotech,SBIO
+Invesco Physical Gold ETC,SGLD
+Invesco Physical Gold ETC EUR Hedged,SGLE
+Invesco S&P 500 ESG,5ESGU
+Invesco S&P 500 High Dividend Low Volatility UCITS,HDLV
+Invesco STOXX Europe 600 UCITS Acc,SDJ600
+Invesco Technology S&P US Select Sector,XLKS
+Invesco US High Yield Fallen Angels UCITS,HYFA
+Invesco US Treasury Bond 1-3 Year UCITS,TRE3
+Invesco US Treasury Bond 3-7 Year UCITS ETF USD Di,TRE7
+Invesco US Treasury Bond 7 10 Year UCITS EUR Hedge,TRXE
+Invesco US Treasury Bond 7-10 Year UCITS ETF USD D,TREX
+Invesco US Treasury Bond UCITS ETF USD Dist,TRES
+Invesco USD Corporate Bond UCITS,PUIG
+Invesco Variable Rate Preferred Shares UCITS,VRPS
+iShares $ Corp Bond ESG UCITS ETF USD Inc,SUOU
+iShares $ Corp Bond USD,LQDE
+iShares $ Emerging Markets Corporate Bond UCITS,EMCR
+iShares $ Floating Rate Bond UCITS USD (Dist),ISFLTR
+iShares $ High Yield Corporate Bond UCITS,IHYU
+iShares $ Short Duration High Yield Corp Bond UCIT,SDHY
+iShares $ TIPS UCITS ETF USD,ITPS
+iShares $ Treasury Bond 1-3Yr UCITS,IBTS
+iShares $ Treasury Bond 1-3Yr UCITS Acc,CSBGU3
+iShares $ Treasury Bond 3-7yr UCITS ETF USD,CSBGU7
+iShares $ Treasury Bond 7-10yr UCITS ETF USD,IBTM
+iShares Asia Pacific Dividend UCITS,IAPD
+iShares Asia Property Yield UCITS,IASP
+iShares Automation & Robotics UCITS USD (Acc),RBOT
+iShares Bric 50 UCITS,BRIC
+iShares China CNY Bond UCITS USD Dist,CNYB
+iShares China Large Cap UCITS,FXC
+iShares Core DAX UCITS,GDAXIEX
+iShares Core Euro Corporate Bond UCITS,IEAC
+iShares Core EURO STOXX 50 ETF EUR,CSSX5E
+iShares Core FTSE 100 UCITS ETF GBP (Dist),ISF
+iShares Core MSCI Emerging Markets IMI UCITS,EIMI
+iShares Core MSCI EMU UCITS ETF EUR,CSEMU
+iShares Core MSCI Japan IMI UCITS ETF USD,SJPA
+iShares Core MSCI Pac ex-Jpn ETF USD,CSPXJ
+iShares Core MSCI World UCITS,SWDA
+iShares Core S&P 500 UCITS,CSSPX
+iShares Core S&P 500 UCITS USD Dist,IUSA
+iShares Core UK Gilts UCITS,IGLT
+iShares Core € Govt Bond UCITS ETF EUR,SEGA
+iShares Developed Markets Property Yield UCITS,IWDP
+iShares Digital Security UCITS Acc,LOCK
+iShares Digitalisation Acc,DGTL
+iShares Diversified Commodity Swap UCITS DE,DJCOMEX
+Ishares Dow Jones U.S. Select Dividend UCITS,DJDVPEX
+iShares Edge MSCI Europe MF GBp,IFSE
+iShares Edge MSCI Europe Minimum Volatility UCITS,MVEU
+iShares Edge MSCI Europe Momentum EUR,IEMO
+iShares Edge MSCI Europe Size Factor UCITS EUR,IESZ
+iShares Edge MSCI World MF GBp,IFSW
+iShares Edge MSCI World Min Vol,MVOL
+iShares Edge S&P 500 Min Vol,ISMVUS
+iShares Electric Vehicles and Driving Technology U,ECAR
+iShares Emerging Markets Local Government Bond UCI,SEML
+iShares EUR Aggregate Bond GBP,IEAG
+iShares EUR Corp Bond ex-Financials GBP,IEXF
+iShares EUR Corp Bond Large Cap UCITS,IBCX
+iShares EUR Corp Bond SRI UCITS,SUOE
+iShares EUR Corporate Bond BBB UK,IEBB
+iShares EUR Government Bond 1-3Yr UCITS,IBGS
+iShares EUR Government Bond 3-5Yr UCITS,IBGX
+iShares EUR Govt Bond 5-7 EUR,IBGY
+iShares EUR High Yield Corporate Bond UCITS,IHYG
+iShares EUR Inflation Linked Government Bond UCIT,IBCI
+iShares EUR Ultrashort Bond UCITS,ERNE
+iShares Euro Corp Bnd Sustain Screen 0-3y,SUSE
+iShares Euro Covered Bond UCITS,ICOV
+iShares EURO Dividend UCITS,IDVY
+iShares Euro Government Bond 1-3Yr UCITS Acc,CSBGE3
+iShares Euro Government Bond 15-30Yr UCITS,IBGL
+iShares Euro Government Bond 3-7Yr UCITS Acc,CSBGE7
+iShares Euro Govt Bond 7-10,IBGM
+iShares EURO STOXX 50 UCITS Dist,EUE
+iShares EURO STOXX Mid UCITS,DJMC
+iShares EURO STOXX Small UCITS,DJSC
+iShares EURO STOXX UCITS,STOXXE.
+iShares European Property Yield UCITS,IPRP
+iShares Fallen Angels HY Corp Bnd,ISWING
+iShares FTSE MIB GBP,CSMIB
+iShares FTSE MIB UCITS Dist,IMIB
+iShares Global Aggregate Bond Hedged Acc,AGGH
+iShares Global Clean Energy UCITS USD (Dist),INRG
+iShares Global Corporate Bond UCITS,CORP
+iShares Global High Yield Corporate Bond UCITS,HYLD
+iShares Global Infrastructure UCITS,INFR
+iShares Global Water UCITS USD (Dist),IH2O
+iShares Healthcare Innovation Acc,HEAL
+iShares Italy Govt Bond UCITS EUR (Dist),IITB
+iShares J.P. Morgan $ EM Bond EUR Hedged UCITS (Di,EMBE
+iShares J.P. Morgan $ Emerging Markets Bond UCITS,IEMB
+iShares MSCI AC Far East ex-Japan UCITS,IFFF
+iShares MSCI Australia UCITS,SAUS
+iShares MSCI Brazil UCITS Dist,IBZL
+iShares MSCI Canada ETF USD,CSCA
+iShares MSCI EM Latin America UCITS ETF USD,LTAM
+iShares MSCI EM Minimum Volatility,ISEMV
+iShares MSCI EM UCITS ETF USD (Acc),SEMA
+iShares MSCI Emerging Markets Asia UCITS,CSEMAS
+iShares MSCI Emerging Markets UCITS Dist,IEEM
+iShares MSCI EMU Dist,CEUDIM
+iShares MSCI EMU Large Cap UCITS,EMUL
+iShares MSCI EMU Small Cap UCITS,CSEMUS
+iShares MSCI Europe ex-UK UCITS,IEUX
+iShares MSCI Europe Quality DE,IEQU
+iShares MSCI Europe SRI UCITS ETF EUR,IESE
+iShares MSCI Europe UCITS Acc,SMEA
+iShares MSCI Europe UCITS Dist,IMEU
+iShares MSCI Europe Value Factor,IEVL
+iShares MSCI Japan EUR Hedged UCITS,IJPE
+iShares MSCI Japan Small Cap UCITS Dist,ISJP
+iShares MSCI Japan SRI Acc Share Class,SUJP
+iShares MSCI Japan UCITS Acc,CSJP
+iShares MSCI Japan UCITS Dist,IJPN
+iShares MSCI Korea UCITS Acc,CSKR
+iShares MSCI Korea UCITS Dist,IKOR
+iShares MSCI Mexico Capped USD,CSMXCP
+iShares MSCI North America UCITS,INAA
+iShares MSCI Pacific ex-Japan UCITS Dist,SPXJ
+iShares MSCI South Africa UCITS,SRSA
+iShares MSCI Taiwan UCITS,ITWN
+iShares MSCI Turkey UCITS,ITKY
+iShares MSCI USA Small Cap UCITS,CSUSS
+iShares MSCI USA UCITS,CSUS
+iShares MSCI World ESG Screened UCITS ETF USD (Acc,SAWD
+iShares MSCI World EUR Hedged UCITS,IWDE
+iShares MSCI World Momentum Factor UCITS,IWMO
+iShares MSCI World Quality Factor UCITS,IWQU
+iShares MSCI World Size Factor UCITS,IWSZ
+iShares MSCI World SRI UCITS ETF EUR (Acc),ISSUSW
+iShares MSCI World UCITS Dist,IWRD
+iShares MSCI World Value Factor UCITS,IWVL
+iShares Nasdaq 100 UCITS,CSNDX
+iShares Nikkei 225 UCITS,CSNKY
+iShares S&P 500 EUR Hedged UCITS,IUES
+iShares Smart City Infrastructure UCITS ETF USD Ac,CITYY
+iShares STOXX Europe 50 UCITS,EUN
+iShares STOXX Europe 600 UCITS,STOXXI.
+iShares STOXX Europe Select Dividend 30 UCITS,SD3PEX
+iShares Sust MSCI EM SRI,SUSM
+iShares Sust MSCI USA SRI,SUAS
+iShares UK Dividend UCITS,IUKD
+iShares UK Property UCITS,IUKP
+iShares US Property Yield UCITS,IUSP
+iShares USD Floating Rate Bond Hedged Dis,ISFLOE
+iShares € Corp Bond 1-5yr UCITS EUR (Dist),SE15
+iShares € Corp Bond Interest Rate Hedged ESG UCITS,IRCP
+iShares € Govt Bond 0-1yr UCITS ETF EUR,IEGE
+iShares € Govt Bond 10-15yr UCITS ETF EUR,IBGZ
+JPM BetaBuilders EUR Govt Bond 1-3 yr UCITS ETF -,JE13
+JPM BetaBuilders US Treasury Bond 0-1 yr UCITS Acc,BBIL
+JPM BetaBuilders US Treasury Bond 1-3 yr - USD,JU13
+JPM EUR Ultra Short Income UCITS,JEST
+JPM Global Equity Multi-Factor UCITS USD Acc,JPGL
+JPMorgan ETFs (Ireland) ICAV - EUR Corporate Bond,JREB
+JPMorgan ETFs (Ireland) ICAV - Europe Research Enh,JREE
+JPMorgan ETFs (Ireland) ICAV - USD Corporate Bond,JRUB
+JPMorgan ETFs (Ireland) ICAV - USD Emerging Market,JMBE
+JPMorgan ETFs (Ireland) ICAV - USD Emerging Market,JMBA
+JPMorgan ETFs (Ireland) ICAV Global High Yield Cor,JGHY
+JPMorgan Ireland ICAV - USD Ultra-Short Income UCI,JPST
+JPMorgan USD Emerging Markets Sovereign Bond UCITS,JPMB
+KraneShares CSI China Internet UCITS ETF EUR,KWBEA
+L&G Artificial Intelligence UCITS,LGAIAI
+L&G Asia Pacific ex Japan Equity UCITS,LGAP
+L&G Battery Value-Chain UCITS,BATT
+L&G Clean Energy UCITS ETF USD Acc,RENW
+L&G Clean Water,LGGLUG
+L&G Cyber Security UCITS,ISPY
+L&G DAX Daily 2x Long UCITS,DEL2
+L&G DAX Daily 2x Short UCITS,DES2
+L&G Ecommerce Logistics UCITS,ECECOM
+L&G Europe Equity (Responsible Exclusions) UCITS E,RIEU
+L&G Gold Mining UCITS,AUCO
+L&G Healthcare Breakthrough UCITS,LGDOCT
+L&G Hydrogen Economy UCITS,HTWO
+L&G Japan Equity UCITS,LGJP
+L&G Pharma Breakthrough UCITS,ECBIOT
+L&G Russell 2000 US Small Cap UCITS,RTWO
+Low Carbon 100 Europe THEAM Easy UCITS,LCEU
+Lyxor Australia (S&P/ASX 200) D-EUR,AUST
+Lyxor BofAML $ High Yield Bond UCITS ETF - D-USD,USHY
+Lyxor BofAML Short Term High Yield Bond UCITS Dist,HYS
+Lyxor BofAML USD High Yield Bond UCITS Monthly Hed,USYH
+Lyxor Core Global Government Bond (DR) UCITS ETF H,GOVG
+Lyxor Core Global Inflation-Linked 1-10Y Bond (DR),GIST
+Lyxor Core MSCI Japan (DR),LCJP
+Lyxor DAX (DR) UCITS - Acc,DAXX
+Lyxor EUR 2-10 Inflation Expectations C-EUR,INFL
+Lyxor Euro Overnight Return UCITS Acc,LEONIA
+Lyxor EuroMTS 1-3 Italy BTP Govt Bond DR C-EUR,BTP13
+Lyxor EuroMTS 15+Y Invstmnt Grd C,EM15
+Lyxor EuroMTS 5-7Y Invstmnt Grd C,EM57
+Lyxor EuroMTS Highest Rated Macro-Weight Govt Bond,EMAAA
+Lyxor Fed Funds US Dollar Cash C-USD,FEDF
+Lyxor Green Bond DR C-EUR,CLIM
+Lyxor iBoxx $ Liquid EM Sovereigns Monthly Hedged,EMBH
+Lyxor iBoxx $ Treasuries 1-3 DR Monthly Hedged D-E,U13H
+Lyxor iBoxx $ Treasuries 10+ DR Monthly Hedged D-E,U10H
+Lyxor Index Fund - Lyxor Global High Yield Sustain,GHYE
+Lyxor Index Fund - Lyxor MSCI Digital Economy ESG,EBUY
+Lyxor Index Fund - Lyxor MSCI Disruptive Technolog,UNIC
+Lyxor Index Fund - Lyxor MSCI EMU Value (DR) UCITS,LEMU
+Lyxor Index Fund - Lyxor MSCI Future Mobility ESG,ELCR
+Lyxor Index Fund - Lyxor MSCI Millennials ESG Filt,MILLE
+Lyxor MSCI China ESG Leaders Extra (DR) UCITS - In,HK
+Lyxor MSCI China UCITS ETF - Acc,LCCN
+Lyxor MSCI Eastern Europe ex Russia UCITS,LYEE
+Lyxor MSCI EM Asia,LCAS
+Lyxor MSCI Emerging Markets Ex China UCITS Acc,EMXC
+Lyxor MSCI EMU Growth DR C EUR,MSGW
+Lyxor MSCI Indonesia UCITS - Acc,INDO
+Lyxor MSCI World Ex EMU C,WLDX
+Lyxor MSCI World Monthly Hedged D,WLDH
+Lyxor New Energy UCITS ETF Dist,ENY
+Lyxor S&P 500 Daily -2x Inverse UCITS - Acc,SPX2S
+Lyxor UCITS China Enterprise (HSCEI) C-EUR,CINA
+Lyxor UCITS Commodities Thomson Reuters/Corecommod,COMO
+Lyxor UCITS Corporate Bond C-EUR,CRPE
+Lyxor UCITS Daily Double Short BTP,BTP2S
+Lyxor UCITS Daily Double Short Bund,BUND2S
+Lyxor UCITS Daily ShortDAX x2 C-EUR,LDAX2S
+Lyxor UCITS DJ Global Titans 50,MGT
+Lyxor UCITS Dow Jones Industrial Average D-EUR,DJE
+Lyxor UCITS Euro Corporate Bond ex Financials C-EU,CBEF
+Lyxor UCITS EuroMTS 1-3Y Investment Grade DR,EM13
+Lyxor UCITS EuroMTS 3-5Y Investment Grade DR,EM35
+Lyxor UCITS EuroMTS Highest Rated Macro-Weighted G,AAA13
+Lyxor UCITS EuroMTS Highest Rated Macro-Weighted G,AAA35
+Lyxor UCITS FTSE 100 C-GBP,FTS100
+Lyxor UCITS FTSE EPRA/NAREIT Global Developed D-EU,REWLD
+Lyxor UCITS FTSE Italia Mid Cap D-EUR,ITAMID
+Lyxor UCITS FTSE MIB,ETFMIB
+Lyxor UCITS FTSE MIB Daily Double Short XBear,XBRMIB
+Lyxor UCITS FTSE MIB Daily Leveraged,LEVMIB
+Lyxor UCITS FTSE MIB Daily Short Bear,BERMIB
+Lyxor UCITS iBoxx USD Treasuries 1-3Y DR,US13
+Lyxor UCITS iBoxx USD Treasuries 10Y+ DR,US10
+Lyxor UCITS Japan (Topix) D-EUR,JPN
+Lyxor UCITS Japan Topix Daily Hedged D-EUR,JPNH
+Lyxor UCITS LevDAX,DAXLEV
+Lyxor UCITS MSCI All Country World C-EUR,LYACWI
+Lyxor UCITS MSCI EMU,LXEMU
+Lyxor UCITS MSCI Korea C-EUR,KOR
+Lyxor UCITS Nasdaq-100 D-EUR,USTE
+Lyxor UCITS S&P 500 Daily Hedged D-EUR,SPXH
+Lyxor UCITS Stoxx 50 D-EUR,MSE
+Lyxor UCITS Stoxx 50 Daily Double Short,BXX
+Lyxor UCITS Stoxx 50 Daily Leverage,DJLEV
+Lyxor UCITS Stoxx 50 Daily Short,BSX
+Lyxor UCITS Stoxx Banks C-EUR,BNKE
+Lyxor UCITS Stoxx Europe 600 Basic Resources,BRES
+Lyxor UCITS Stoxx Europe 600 Food & Beverage,DJFOO
+Lyxor UCITS Stoxx Europe 600 Health Care,LYXHEA
+Lyxor UCITS Stoxx Europe 600 Technology,LYXTNO
+Lyxor UCITS Stoxx Europe 600 Utilities,LYXUTI
+Lyxor US Curve Steepending 2-10 UCITS ACC,STPU
+Lyxor US TIPS DR D-USD,TIPU
+Lyxor US Treasury 3-7Y (DR) UCITS,US37
+Lyxor US$ 10Y Inflation Expectations UCITS ETF - C,INFU
+MSCI Japan Socially Responsible (hedged EUR)A-acc,JPSRE
+MSCI Pacific Socially Resp UCITS (USD)A-dis,PSREUA
+Ossiam ESG Low Carbon Shiller Barclays CAPE US Sec,5HEE
+Ossiam iSTOXX Europe Minimum Variance NR UCITS 1C,EUMV
+Ossiam Shiller Barclays Cape UK,CAPE
+Ossiam Shiller Barclays Cape US Sector Value Tr 1C,CAPU
+Ossiam Stoxx Europe 600 Equal Weight NR UCITS 1C,S6EW
+Ossiam US ESG Low Carbon Equity Factors UCITS 1A E,OUFE
+Ossiam US Minimum Variance NR UCITS 1C,SPMVV
+PIMCO EM Advantage Local Bond EUR,EMLI
+PIMCO Euro Short Maturity Source UCITS,PJS1
+PIMCO Euro Short-Term High Yield Corporate Bond So,PSEUHI
+PIMCO Low Duration Euro Corporate Bond Source Inco,LDCE
+PIMCO Low Duration US Corporate Bond Source Ucits,LDCU
+PIMCO Short-Term High Yield Corporate Bond Source,STHE
+PIMCO Short-Term High Yield Corporate Bond Source,STHY
+PIMCO US Dollar Short Maturity Source UCITS,MINT
+PowerShares Emerging Markets USD Bond,PEMD
+PowerShares EURO STOXX High Dividend Low Volatilit,EUHD
+PowerShares Preferred Shares UCITS,PRFD
+PowerShares Preferred Shares UCITS EUR Hedged Dist,PRFE
+Rize Cybersecurity Data Privacy,CYBR
+Rize Sustainable Future of Food UCITS A USD,FOOD
+ROBO-STOX Global Robotics,ROBO
+SBI® Foreign AAA-BBB 1-5 ESG UCITS (CHF)A-dis,SF1EUA
+SBI® Foreign AAA-BBB 5-10 ESG UCITS (CHF)A-dis,SF5EUA
+SG DAX +3x Daily Leveraged Collateralized,DAX3L
+SG DAX -3x Daily Short Collateralized,DAX3S
+SG EURO STOXX 50 +3x Daily Leveraged Collateralize,SX5E3L
+SG EURO STOXX 50 -3x Daily Short Collateralized,SX5E3S
+SG FTSE MIB +3x Daily Leveraged Collateralized,MIB3L
+SG FTSE MIB -3x Daily Short Collateralized,MIB3S
+Source Bloomberg Commodity,CMOD
+Source Consumer Staples S&P US Select Sector,XLPS
+Source Energy S&P US Select Sector UCITS USD,XLES
+Source EURO STOXX 50 B Total Return,SDJE5D
+Source Materials S&P US Select Sector,XLBS
+Source MSCI USA UCITS,MXUS
+Source Real Estate S&P US Select Sector,XRES
+Source Russell 2000 UCITS,SR2000
+Source S&P 500 Hedged,E500
+Source S&P 500 UCITS,SPXS
+Source STOXX Europe 600 Optimised Banks UCITS,X7PS
+Source Utilities S&P US Select Sector UCITS,XLUS
+SPDR Barclays 0-3 Year US Corporate Bond UCITS,SUSC
+SPDR Barclays 1-3 US Treasury Bond,TRS3
+SPDR Barclays 10+ Euro Government Bond,LGOV
+SPDR Barclays 10+ U.S. Corporate Bond,LUSC
+SPDR Barclays 10+ U.S. Treasury Bond,LUTR
+SPDR Barclays 3-10 U.S. Corporate Bond,IUCB
+SPDR Barclays 3-5 U.S. Treasury Bond,TRS5
+SPDR Barclays 7-10 U.S. Treasury Bond,TRSX
+SPDR Barclays Cap Euro Government Bond,GOVY
+SPDR Barclays Cap US Treasury Bond,TRSY
+SPDR Barclays Capital Euro High Yield Bond,JNKE
+SPDR Barclays Euro Corporate Bond UCITS,EUCO
+SPDR Barclays U.S. TIPS,BRTIPS
+SPDR Bloomberg 1-3 Year Euro Government Bond UCITS,GOVS
+SPDR Bloomberg Barclays 0-3 Year Euro Corporate Bo,SEUC
+SPDR Bloomberg Barclays Emerging Markets Local Bon,EMLD
+SPDR Bloomberg Barclays Emerging Markets Local Bon,EMDE
+SPDR Bloomberg Barclays Global Aggregate Bond EUR,GLAE
+SPDR Bloomberg Barclays Global Aggregate Bond UCIT,GLAG
+SPDR Bloomberg SASB U.S. High Yield Corporate ESG,SJNK
+SPDR BofA Merrill Lynch 0-5 EM Govt Bond,EMH5
+SPDR Euro Stoxx Low Volatility UCITS,ELOW
+SPDR ICE BofAML 0-5 Year EM USD Government Bond UC,SPEMHE
+SPDR MSCI ACWI EUR Hdg UCITS ETF (Acc),EACW
+SPDR MSCI All Country World Investable Market UCIT,IMIE
+SPDR MSCI All Country World UCITS,ACWE
+SPDR MSCI EM Asia UCITS,EMAE
+SPDR MSCI EMU UCITS,EURO
+SPDR MSCI Europe Communication Services,STTX
+SPDR MSCI Europe Consumer Discretionary UCITS,STRX
+SPDR MSCI Europe Consumer Staples UCITS,STSX
+SPDR MSCI Europe Energy UCITS,STNX
+SPDR MSCI Europe Financials UCITS,STZX
+SPDR MSCI Europe Health Care UCITS,STWX
+SPDR MSCI Europe Industrials UCITS,STQX
+SPDR MSCI Europe Small Cap UCITS,SMCX
+SPDR MSCI Europe Technology UCITS,STKX
+SPDR MSCI Europe UCITS,EROX
+SPDR MSCI Europe Utilities UCITS,STUX
+SPDR MSCI World Energy UCITS,SPWNRG
+SPDR MSCI World Technology,SWTEC
+SPDR MSCI World UCITS,SWRD
+SPDR Refinitiv Global Convertible Bond EUR Hdg UCI,GCVE
+SPDR Refinitiv Global Convertible Bond UCITS,CONV
+SPDR Russell 2000 U.S. Small Cap UCITS,R2US
+SPDR S&P 500 Low Volatility UCITS,LOWV
+SPDR S&P 500 UCITS,SPY5
+SPDR S&P 500 UCITS ETF EUR Acc H,SPXE
+SPDR S&P Emerging Markets Dividend Aristocrats,EMDV
+SPDR S&P Euro Dividend Aristocrats,EUDV
+SPDR S&P Global Dividend Aristocrats UCITS,GLDV
+SPDR S&P Pan Asia Dividend Aristocrats UCITS,PADV
+SPDR S&P U.S. Consumer Discretionary Select Sector,SXLY
+SPDR S&P U.S. Consumer Staples Select Sector,SXLP
+SPDR S&P U.S. Energy Select Sector,SXLE
+SPDR S&P U.S. Financials Select Sector,SXLF
+SPDR S&P U.S. Health Care Select Sector,SXLV
+SPDR S&P U.S. Industrials Select Sector,SXLI
+SPDR S&P U.S. Materials Select Sector,SXLB
+SPDR S&P U.S. Technology Select Sector,SXLK
+SPDR S&P U.S. Utilities Select Sector UCITS,SXLU
+SPDR S&P US Communication Services Select Sector,SXLC
+SPDR S&P US Dividend Aristocrats UCITS Dis,USDV
+SPDR S&P US Dividend Aristocrats UCITS ETF EUR Dis,USDE
+SPDR STOXX Europe 600 ESG Screened UCITS ETF EUR A,600X
+SSga SPDR Dow Jones Global Real Estate UCITS,GLRE
+SSgA SPDR MSCI Emerging Markets UCITS,EMRG
+SSgA SPDR S&P 400 US Mid Cap,SPY4
+UBS (Irl) ETF plc - Factor MSCI USA Quality UCITS,UQLTD
+UBS (Irl) ETF plc - Global Gender Equality UCITS E,GENDED
+UBS (Irl) ETF plc - MSCI ACWI Socially Responsible,AWSRIA
+UBS (Irl) ETF plc - MSCI Australia UCITS ETF (hedg,AUHEUA
+UBS (Irl) ETF plc - S&P 500 ESG UCITS ETF Hedged t,5ESGE
+UBS (Irl) ETF plc S&P 500 ESG UCITS A Cap USD,SPESGU
+UBS (Irl) ETF plc – DJ Global Select Dividend UCIT,GLDVD
+UBS (Irl) ETF plc – MSCI USA 100% hedged to EUR UC,USEUWH
+UBS (Irl) plc - Factor MSCI World Minimum Volatili,WDMVO
+UBS (Irl) plc - FTSE EPRA Nareit Developed Green U,GREIT
+UBS (Irl) plc - MSCI Australia UCITS (AUD) A-acc,AUSAUW
+UBS (Irl) plc - MSCI USA NSL UCITS USD A-acc,CMXUS
+UBS (Irl) plc - MSCI USA Value UCITS (USD) A-dis,USVEUY
+UBS (Irl) plc - MSCI World ESG Leaders UCITS (hedg,WDESGE
+UBS (Irl) plc - MSCI World ESG Leaders UCITS USD A,WDESG
+UBS - EURO STOXX 50 UCITS ETF (EUR) A-dis,E50EUA
+UBS - MSCI EMU Socially Responsible (EUR) A-dis,ESREUA
+UBS Barclays Capital US 10+ T Bond hedged A-dis,UST10F
+UBS Barclays EUR Treasury 1-10 EUR,SS1EUA
+UBS Barclays US Liquid Corp USD,CBUS
+UBS Barclays US Liquid Corporates,CBUS5
+UBS Barclays US Liquid Corporates 1-5 hedged A-acc,CBUS5E
+UBS Bloomberg Barclays TIPS 1-10 hedged A-acc EUR,TIP1E
+UBS Bloomberg Barclays USD Emerging Markets Sovere,SBEME
+UBS ETF - Bloomberg Barclays Euro Inflation Linked,INFL1
+UBS ETF - Bloomberg Barclays Euro Inflation Linked,INFL10
+UBS ETF - Bloomberg Barclays MSCI Euro Area Liquid,CBSEU
+UBS ETF - Bloomberg Barclays MSCI Global Liquid Co,ECCO
+UBS ETF - Bloomberg Barclays MSCI US Liquid Corpor,CBSUSA
+UBS ETF - Bloomberg Barclays MSCI US Liquid Corpor,CBSUS
+UBS ETF - Bloomberg Barclays MSCI US Liquid Corpor,CBSUSE
+UBS ETF - Bloomberg Barclays TIPS 1-10 UCITS ETF (,TIP1D
+UBS ETF - Bloomberg Barclays TIPS 10+ UCITS ETF (h,TIP10E
+UBS ETF - Bloomberg Barclays TIPS 10+ UCITS ETF (U,TIP10D
+UBS ETF - Bloomberg Barclays US 1-3 Year Treasury,UST1F
+UBS ETF - Bloomberg Barclays USD Emerging Markets,SBEM
+UBS ETF - EURO STOXX 50 ESG UCITS ETF A EUR Dis,E50ESG
+UBS ETF - Factor MSCI EMU Quality UCITS ETF (EUR),EQLTD
+UBS ETF - J.P. Morgan CNY China Government 1-10 Ye,CIB
+UBS ETF - J.P. Morgan EM Multi-Factor Enhanced Loc,EMLOC
+UBS ETF - J.P. Morgan Global Government ESG Liquid,EGO
+UBS ETF - J.P. Morgan USD EM Diversified Bond 1-5,SHEME
+UBS ETF - J.P. Morgan USD EM IG ESG Diversified Bo,EMIGE
+UBS ETF - J.P. Morgan USD Emerging Markets IG ESG,EMIG
+UBS ETF - MSCI Canada UCITS ETF (CAD) A-acc,CANA
+UBS ETF - MSCI China ESG Universal UCITS (USD) A-d,CINESG
+UBS ETF - MSCI EMU Select Factor Mix UCITS ETF (EU,EUFM
+UBS ETF - MSCI EMU Socially Responsible UCITS ETF,EMUSRI
+UBS ETF - MSCI Europe UCITS ETF (hedged to EUR) A-,EUEUA
+UBS ETF - MSCI Japan Socially Responsible UCITS ET,JPSR
+UBS ETF - MSCI Switzerland 20/35 UCITS CHF A-acc,SW2CHB
+UBS ETF - MSCI Switzerland 20/35 UCITS ETF (hedged,SIVE
+UBS ETF - MSCI USA Socially Responsible UCITS ETF,USSRF
+UBS ETF - MSCI World UCITS ETF (USD) A-dis,WRDEUA
+UBS ETF Barclays Capital US 1-3Y Treasury Bond USD,UT1EUA
+UBS ETF Barclays Capital US 7-10Y Treasury Bond US,UT7EUA
+UBS ETF Barclays Euro Area Liquid Corporates 1-5 Y,CBEU5
+UBS ETF Barclays US Liquid Corporates UCITS hedged,CBUSE
+UBS ETF MSCI Canada UCITS CAD A-dis,CANEUA
+UBS ETF MSCI EMU UCITS EUR A-dis,EMUEUA
+UBS ETF MSCI Europe UCITS EUR A-dis,EUREUA
+UBS ETF MSCI Japan UCITS JPY A-dis,JPNEUA
+UBS ETF MSCI Pacific ex Japan UCITS USD A-dis,PACEUA
+UBS ETF Sustainable Dev Bnk Bs UCI (EUR hdg) A-acc,MDBE
+UBS ETFs plc - MSCI AC Asia Ex Japan SF UCITS USD,AJEUAS
+UBS ETFs plc - MSCI ACWI SF UCITS ETF (USD) A-acc,ACWIA
+UBS ETFs plc - MSCI Emerging Markets SF UCITS USD,EMGEAS
+UBS Factor MSCI EMU Prime Value U EUR Ad,EPVLD
+UBS Factor MSCI USA Prime Value UCITS USD Ad,UPVLD
+UBS Global Gender Equality UCITS Hedged A Acc EUR,GENDEE
+UBS Irl ETF plc - MSCI USA UCITS USD A-dis,USAEUY
+UBS Irl Factor MSCI USA Low Volatility UCITS (hedg,ULOVE
+UBS Irl Factor MSCI USA Quality UCITS (hedged to E,UQLTE
+UBS Irl MSCI USA Select Factor Mix UCITS USD A-dis,USFMD
+UBS Irl plc MSCI USA A-acc,USAUSW
+UBS JPMorgan USD EM Diversified Bond 1-5 A-dis,SHEMB
+UBS MSCI ACWI Socially Responsible UCITS Hedged A,AWSRIE
+UBS MSCI Canada UCITS EUR,CAHEUA
+UBS MSCI Emerging Markets UCITS USD A-acc,EMMUSC
+UBS MSCI UK A-acc,UKGBPB
+UBS MSCI USA Socially Responsible,ASREUA
+UBS plc CMCI Composite SF USD,CCUSAS
+UBS plc MSCI USA Select Factor Mix hedged to EUR A,USMUFE
+UBS Sustainable Dev Bank Bds UCITS (USD)Aac,MDBA
+UBS – MSCI World Socially Resp (USD)A-dis,WSREUA
+UBS(Lux)Fund Solutions – FTSE 100 UCITS (GBP)A-dis,100EUA
+UBS(Lux)Fund Solutions – MSCI EMU Value UCITS(EUR),EMVEUA
+UBS(Lux)Fund Solutions – MSCI USA UCITS(USD)A-dis,USAEUA
+UBS– MSCI Emerging Markets UCITS (USD)A-dis,EMMEUA
+VanEck Global Fallen Angel High Yield Bond,GFA
+VanEck Global Mining UCITS A,GDIG
+VanEck J.P. Morgan EM Local Currency Bond,EMLC
+VanEck Junior Gold Miners,GDXJ
+VanEck Morningstar US Sustainable Wide Moat UCITS,MOAT
+VanEck Vectors Emerging Markets High Yield Bond UC,HYEM
+VanEck Vectors Gold Miners UK,GDX
+VanEck Vectors iBoxx EUR Corporates,TCBT
+VanEck Vectors iBoxx EUR Sovereign Capped AAA-AA 1,TAT
+VanEck Vectors Morningstar Developed Markets Divid,TDIV
+VanEck Vectors Morningstar Global Wide Moat UCITS,GOAT
+VanEck Vectors Semiconductor UCITS,SMH
+VanEck Video Gaming and eSports UCITS,ESPO
+Vanguard EUR Corporate Bond UCITS,VECP
+Vanguard EUR Corporate Bond UCITS ETF EUR Accumula,VECA
+Vanguard EUR Eurozone Government Bond UCITS ETF EU,VGEA
+Vanguard Eurozone Government Bond,VETY
+Vanguard FTSE 100 UCITS GBP Inc,VUKE
+Vanguard FTSE All-World High Div Yld,VHYL
+Vanguard FTSE All-World UCITS USD Acc,VWCE
+Vanguard FTSE All-World UCITS USD Inc,VWRL
+Vanguard FTSE Developed Asia Pacif,VAPX
+Vanguard FTSE Developed Europe,VEUR
+Vanguard FTSE Developed Europe ex UK UCITS EUR Acc,VERE
+Vanguard FTSE Developed Europe UCITS EUR Acc,VWCG
+Vanguard FTSE Developed World UCITS ETF USD,VEVE
+Vanguard FTSE Developed World UCITS ETF USD Accumu,VHVE
+Vanguard FTSE Emerging Markets UCITS ETF USD Accum,VFEA
+Vanguard FTSE Emerging Markets UCITS USD Inc,VFEM
+Vanguard FTSE Japan UCITS ETF USD Accumulation,VJPA
+Vanguard FTSE Japan USD,VJPN
+Vanguard Global Aggregate Bond EUR Hgd Acc,VAGF
+Vanguard LifeStrategy 20% Equity UCITS (EUR) Distr,VNGD20
+Vanguard LifeStrategy 20% Equity UCITS ETF (EUR) A,VNGA20
+Vanguard LifeStrategy 40% Equity UCITS (EUR) Distr,VNGD40
+Vanguard LifeStrategy 40% Equity UCITS ETF (EUR) A,VNGA40
+Vanguard LifeStrategy 60% Equity UCITS (EUR) Distr,VNGD60
+Vanguard LifeStrategy 60% Equity UCITS ETF (EUR) A,VNGA60
+Vanguard LifeStrategy 80% Equity UCITS ETF (EUR) A,VNGA80
+Vanguard LifeStrategy 80% Equity UCITS ETF (EUR) D,VNGD80
+Vanguard S&P 500 UCITS Acc,VUAA
+Vanguard S&P 500 UCITS USD Inc,VUSA
+Vanguard USD Corporate 1-3 year Bond UCITS,VUSC
+Vanguard USD Corporate 1-3 Year Bond UCITS ETF USD,VDCA
+Vanguard USD Corporate Bond UCITS,VUCP
+Vanguard USD Corporate Bond UCITS ETF USD Accumula,VUCE
+Vanguard USD EM Government Bond,VEMT
+Vanguard USD Emerging Markets Government Bond UCIT,VDEA
+Vanguard USD Treasury Bd,VUTY
+Vanguard USD Treasury Bond UCITS USD Accumulation,VDTA
+WisdomTree Agriculture,AIGA
+WisdomTree Agriculture 2x Daily Leveraged,LAGR
+WisdomTree Aluminium,ALMN
+WisdomTree Aluminium - EUR Daily Hedged,EALU
+WisdomTree Aluminium 2x Daily Leveraged,LALU
+WisdomTree Artificial Intelligence UCITS ETF - USD,WTAI
+WisdomTree AT1 CoCo Bond UCITS ETF - USD,CCBO
+WisdomTree Battery Solutions UCITS ETF - USD Acc,VOLT
+WisdomTree Bloomberg Brent Crude Oil,BRND
+WisdomTree Bloomberg WTI Crude Oil,WTID
+WisdomTree Brent Crude Oil,BRNT
+WisdomTree Brent Crude Oil - EUR Daily Hedged,EBRT
+WisdomTree Brent Crude Oil 1x Daily Short,SBRT
+WisdomTree Brent Crude Oil 2x Daily Leveraged,LBRT
+WisdomTree Brent Crude Oil 3x Daily Leveraged,3BRL
+WisdomTree Brent Crude Oil 3x Daily Short,3BRS
+WisdomTree Broad Commodities,AIGC
+WisdomTree Broad Commodities 1x Daily Short,SALL
+WisdomTree Broad Commodities Longer Dated - EUR Da,EFCM
+WisdomTree BTP 10Y 3x Daily Leveraged,3BTL
+WisdomTree BTP 10Y 3x Daily Short,3BTS
+WisdomTree BTP 10Y 5x Daily Short,5BTS
+WisdomTree Bund 10Y 3x Daily Leveraged,3BUL
+WisdomTree Bund 10Y 3x Daily Short,3BUS
+WisdomTree Bund 10Y 5x Daily Short,5BUS
+WisdomTree Bund 30Y 3x Daily Short,3UBS
+WisdomTree Cloud Computing UCITS ETF - USD Acc,WCLD
+WisdomTree Cocoa,COCO
+WisdomTree Cocoa 2x Daily Leveraged,LCOC
+WisdomTree Coffee,COFF
+WisdomTree Coffee - EUR Daily Hedged,ECOF
+WisdomTree Coffee 2x Daily Leveraged,LCFE
+WisdomTree Coffee 3x Daily Leveraged,3CFL
+WisdomTree Copper,COPA
+WisdomTree Copper - EUR Daily Hedged,ECECOP
+WisdomTree Copper 1x Daily Short,SCOP
+WisdomTree Copper 2x Daily Leveraged,LCOP
+WisdomTree Copper 3x Daily Leveraged,3HCL
+WisdomTree Copper 3x Daily Short,3HCS
+WisdomTree Corn,CORN
+WisdomTree Corn - EUR Daily Hedged,ECRN
+WisdomTree Corn 2x Daily Leveraged,LCOR
+WisdomTree Cotton,COTN
+WisdomTree Cotton - EUR Daily Hedged,ECTN
+WisdomTree Cybersecurity UCITS USD,WCBR
+WisdomTree DAX 3x Daily Leveraged,3DEL
+WisdomTree DAX 3x Daily Short,3DES
+WisdomTree Emerging Markets 3x Daily Leveraged,3EML
+WisdomTree Emerging Markets 3x Daily Short,3EMS
+WisdomTree Emerging Markets Equity Income UCITS ET,WTDEM
+WisdomTree Emerging Markets SmallCap Dividend UCIT,WTDGSE
+WisdomTree Energy,AIGE
+WisdomTree Energy Enhanced,BTBENE
+WisdomTree EURO STOXX 50 3x Daily Short,3EUS
+WisdomTree EURO STOXX 50® 3x Daily Leveraged,3EUL
+WisdomTree EURO STOXX Banks 3x Daily Leveraged,3BAL
+WisdomTree Europe Equity Income UCITS,WTEEI
+WisdomTree Europe Equity UCITS ETF - USD Hedged,HEDJ
+WisdomTree Europe SmallCap Dividend UCITS,DFE
+WisdomTree Eurozone Quality Dividend Growth UCITS,EGRA
+WisdomTree FTSE MIB 3x Daily Leveraged,3ITL
+WisdomTree FTSE MIB 3x Daily Short,3ITS
+WisdomTree FTSE MIB Banks,ITBL
+WisdomTree Gasoline,UGAS
+WisdomTree Global Quality Dividend Growth UCITS ET,GGRA
+WisdomTree Gold,BULL
+WisdomTree Gold - EUR Daily Hedged,EBUL
+WisdomTree Gold 1x Daily Short,SBUL
+WisdomTree Gold 2x Daily Leveraged,LBUL
+WisdomTree Gold 3x Daily Leveraged,3GOL
+WisdomTree Gold 3x Daily Short,3GOS
+WisdomTree Grains,GRNS
+WisdomTree Industrial Metals,AIGI
+WisdomTree Industrial Metals - EUR Daily Hedged,EIMT
+WisdomTree Industrial Metals 1x Daily Short,SIMT
+WisdomTree Industrial Metals Enhanced,META
+WisdomTree Japan Equity UCITS ETF - USD Hedged,DXJ
+WisdomTree Lead,LEAD
+WisdomTree Lean Hogs,HOGS
+WisdomTree Livestock,AIGL
+WisdomTree Long CHF Short EUR,EUCH
+WisdomTree Long CHF Short EUR 3x Daily,ECH3
+WisdomTree Long GBP Short EUR,EUGB
+WisdomTree Long GBP Short EUR 3x Daily,EGB3
+WisdomTree Long GBP Short EUR 5x Daily,EGB5
+WisdomTree Long JPY Short EUR,EUJP
+WisdomTree Long JPY Short EUR 3x Daily,EJP3
+WisdomTree Long NOK Short EUR,EUNO
+WisdomTree Long SEK Short EUR,EUSE
+WisdomTree Long USD Short EUR,EUUS
+WisdomTree Long USD Short EUR 3x Daily,EUS3
+WisdomTree Long USD Short EUR 5x Daily,EUS5
+WisdomTree NASDAQ 100 3x Daily Leveraged,QQQ3
+WisdomTree NASDAQ 100 3x Daily Short,QQQS
+WisdomTree Natural Gas,NGAS
+WisdomTree Natural Gas - EUR Daily Hedged,ENGS
+WisdomTree Natural Gas 1x Daily Short,SNGA
+WisdomTree Natural Gas 2x Daily Leveraged,LNGA
+WisdomTree Natural Gas 3x Daily Leveraged,3NGL
+WisdomTree Natural Gas 3x Daily Short,3NGS
+WisdomTree Nickel,NICK
+WisdomTree Nickel - EUR Daily Hedged,ENIK
+WisdomTree Nickel 1x Daily Short,SNIK
+WisdomTree Nickel 2x Daily Leveraged,LNIK
+WisdomTree Palladium 1x Daily Short,1PAS
+WisdomTree Palladium 2x Daily Leveraged,2PAL
+WisdomTree Petroleum,AIGO
+WisdomTree Petroleum 2x Daily Leveraged,LPET
+WisdomTree Physical Gold,PHAU
+WisdomTree Physical Gold - EUR Daily Hedged,GBSE
+WisdomTree Physical Palladium,PHPD
+WisdomTree Physical Platinum,PHPT
+WisdomTree Physical Precious Metals,PHPM
+WisdomTree Physical Silver,PHAG
+WisdomTree Physical Swiss Gold,SGBS
+WisdomTree Platinum 2x Daily Leveraged,LPLA
+WisdomTree Precious Metals,AIGP
+WisdomTree S&P 500 3x Daily Leveraged,3USL
+WisdomTree S&P 500 3x Daily Short,3USS
+WisdomTree S&P 500 VIX Short-Term Futures 2.25x Da,VIXL
+WisdomTree Short CHF Long EUR,CHEU
+WisdomTree Short CHF Long EUR 3x Daily,CHE3
+WisdomTree Short GBP Long EUR,GBEU
+WisdomTree Short GBP Long EUR 3x Daily,GBE3
+WisdomTree Short GBP Long EUR 5x Daily,GBE5
+WisdomTree Short JPY Long EUR 3x Daily,JPE3
+WisdomTree Short NOK Long EUR,NOEU
+WisdomTree Short SEK Long EUR,SEEU
+WisdomTree Short USD Long EUR,USEU
+WisdomTree Short USD Long EUR 3x Daily,USE3
+WisdomTree Short USD Long EUR 5x Daily,USE5
+WisdomTree Silver,SLVR
+WisdomTree Silver - EUR Daily Hedged,ESVR
+WisdomTree Silver 1x Daily Short,SSIL
+WisdomTree Silver 2x Daily Leveraged,LSIL
+WisdomTree Silver 3x Daily Leveraged,3SIL
+WisdomTree Silver 3x Daily Short,3SIS
+WisdomTree Softs,AIGS
+WisdomTree Soybean Oil,SOYO
+WisdomTree Soybeans,SOYB
+WisdomTree Soybeans - EUR Daily Hedged,ESOY
+WisdomTree Sugar,SUGA
+WisdomTree Sugar - EUR Daily Hedged,ESUG
+WisdomTree Sugar 2x Daily Leveraged,LSUG
+WisdomTree Sugar 3x Daily Leveraged,3SUL
+WisdomTree Tin,TINM
+WisdomTree US Equity Income UCITS,DHS
+WisdomTree US Quality Dividend Growth UCITS ETF -,DGRA
+WisdomTree US Treasuries 10Y 3x Daily Leveraged,3TYL
+WisdomTree US Treasuries 10Y 3x Daily Short,3TYS
+WisdomTree US Treasuries 10Y 5x Daily Short,5TYS
+WisdomTree US Treasuries 30Y 3x Daily Short,UL3S
+WisdomTree Wheat,WEAT
+WisdomTree Wheat - EUR Daily Hedged,EWAT
+WisdomTree Wheat 2x Daily Leveraged,LWEA
+WisdomTree Wheat 3x Daily Leveraged,3WHL
+WisdomTree WTI Crude Oil,CRUD
+WisdomTree WTI Crude Oil - EUR Daily Hedged,ECECRD
+WisdomTree WTI Crude Oil 1x Daily Short,SOIL
+WisdomTree WTI Crude Oil 2x Daily Leveraged,LOIL
+WisdomTree WTI Crude Oil Longer Dated,FCRU
+WisdomTree Zinc,ZINC
+WisdomTree Zinc - EUR Daily Hedged,EZNC
+x-trackers Swiss Large DR 1D,XSMI
+Xtrackers Blo Comm ex-Agricul Livest Swap 1C EUR H,XDBC
+Xtrackers DAX UCITS ETF 1C,XDAX
+Xtrackers ESG MSCI Europe UCITS 1C,XZEU
+Xtrackers ESG MSCI Japan UCITS 1C EUR,XZMJ
+Xtrackers ESG MSCI World UCITS ETF 1C,XZW0
+Xtrackers Euro Stoxx 50 UCITS ETF 1D,XESX
+Xtrackers Euro Stoxx Quality Dividend UCITS,XD3E
+Xtrackers FTSE MIB UCITS 1D,XMIB
+Xtrackers FTSE Vietnam Swap UCITS 1C,XFVT
+Xtrackers IE Physical Silver ETC,XSLR
+Xtrackers IE Physical Silver EUR Hedged ETC 4,XSLE
+Xtrackers II EUR Overnight Rate Swap UCITS 1C,XEON
+Xtrackers II Eurozone Government Bond 1-3 UCITS 1C,X13E
+Xtrackers II Eurozone Government Bond 15-30 UCITS,X15E
+Xtrackers II Eurozone Government Bond 25+ UCITS 1C,X25E
+Xtrackers II Eurozone Government Bond 7-10 UCITS 1,X710
+Xtrackers II US Treasuries 1D,XUTD
+Xtrackers II USD JP Morgan EM Bond LON,XUEM
+Xtrackers II USD Overnight Rate Swap UCITS 1C,XFFE
+Xtrackers LPX Private Equity Swap UCITS 1C,XLPE
+Xtrackers MSCI China A UCITS 1C,XX25
+Xtrackers MSCI China UCITS 1C,XCS6
+Xtrackers MSCI EM Europe, Middle East & Africa ESG,XMEA
+Xtrackers MSCI Emerging Markets UCITS,XMME
+Xtrackers MSCI Europe Small Cap UCITS 1C,XXSC
+Xtrackers MSCI Europe UCITS ETF 1C,XMEU
+Xtrackers MSCI Japan UCITS 1C,XMJP
+Xtrackers MSCI Korea UCITS ETF 1C,XMKO
+Xtrackers MSCI USA ESG UCITS ETF 1C,XZMU
+Xtrackers MSCI USA UCITS ETF 1C,XD9U
+Xtrackers MSCI World Energy UCITS ETF 1C,XDW0
+Xtrackers MSCI World Quality UCITS ETF 1C,XDEQ
+Xtrackers MSCI World UCITS 1C,XDWD
+Xtrackers Portfolio Income UCITS ETF 1D,XS7W
+Xtrackers Russell 2000 UCITS 1C,XRS2
+Xtrackers S&P 500 Inverse Daily Swap UCITS 1C,XSPS
+Xtrackers S&P ASX 200 UCITS 1D,XAUS
+Xtrackers S&P Global Infrastructure Swap UCITS 1C,XSGI
+Xtrackers S&P Select Frontier Swap UCITS 1C,XSFR
+Xtrackers ShortDAX Daily Swap UCITS ETF 1C,XSDX
+Xtrackers USD High Yield Corporate Bond UCITS,XUHY
+
