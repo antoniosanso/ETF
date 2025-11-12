@@ -1,21 +1,2 @@
 ticker,yahoo,sector,currency
 1PAS,1PAS.MI,,EUR
-2PAL,2PAL.MI,,EUR
-3DEL,3DEL.MI,Equity Index Leverage,EUR
-3DES,3DES.MI,Equity Index Short,EUR
-3CFL,3CFL.MI,Commodity - Coffee Leverage,EUR
-3BUS,3BUS.MI,Bonds Short,EUR
-3BUL,3BUL.MI,Bonds Leverage,EUR
-3EUL,3EUL.MI,Equity Index Leverage,EUR
-3EUS,3EUS.MI,Equity Index Short,EUR
-3BRL,3BRL.MI,Commodity - Oil Leverage,EUR
-3BRS,3BRS.MI,Commodity - Oil Short,EUR
-3BAL,3BAL.MI,Banks Leverage,EUR
-3BTL,3BTL.MI,BTP Leverage,EUR
-3BTS,3BTS.MI,BTP Short,EUR
-3EML,3EML.MI,EM Equity Leverage,EUR
-3EMS,3EMS.MI,EM Equity Short,EUR
-3GOL,3GOL.MI,Gold Leverage,EUR
-3GOS,3GOS.MI,Gold Short,EUR
-3HCL,3HCL.MI,Copper Leverage,EUR
-100EUA,,,
