@@ -59,11 +59,8 @@ jobs:
         run: |
           mkdir -p public/datasets
           cp datasets/investing_history.csv public/datasets/
-          # Disabilita cache lato CDN su Pages per la cartella datasets
-          cat > public/_headers <<'H'
-/datasets/*
-  Cache-Control: no-cache, no-store, must-revalidate
-H
+          echo "/datasets/*" > public/_headers
+          echo "  Cache-Control: no-cache, no-store, must-revalidate" >> public/_headers
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
