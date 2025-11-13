@@ -54,11 +54,18 @@ jobs:
           name: investing_history_csv
           path: datasets/investing_history.csv
 
-      # -------- GitHub Pages publication --------
+      # ---------- GitHub Pages publication ----------
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Prepare GitHub Pages artifact
         run: |
           mkdir -p public/datasets
+          # Copia il CSV
           cp datasets/investing_history.csv public/datasets/
+          # Converte il CSV in tabella HTML
+          python -c "import pandas as pd; df = pd.read_csv('datasets/investing_history.csv'); df.to_html('public/datasets/investing_history.html', index=False)"
+          # Disabilita cache lato CDN su Pages per la cartella datasets
           echo "/datasets/*" > public/_headers
           echo "  Cache-Control: no-cache, no-store, must-revalidate" >> public/_headers
 
