@@ -66,40 +66,40 @@ jobs:
 
           # Genera HTML globale + un HTML per ogni ETF (ticker)
           python - << 'PY'
-import os
-import pandas as pd
+          import os
+          import pandas as pd
 
-csv_path = "datasets/investing_history.csv"
-out_dir = "public/datasets"
-os.makedirs(out_dir, exist_ok=True)
-
-df = pd.read_csv(csv_path)
-
-# Normalizza nomi colonne
-df.columns = [str(c).lower() for c in df.columns]
-if "symbol" in df.columns and "ticker" not in df.columns:
-    df = df.rename(columns={"symbol": "ticker"})
-
-# HTML complessivo (opzionale, lo manteniamo)
-full_html_path = os.path.join(out_dir, "investing_history.html")
-df.to_html(full_html_path, index=False)
-
-# HTML per singolo ETF (ticker)
-if "ticker" not in df.columns:
-    raise ValueError(f"Nessuna colonna 'ticker' trovata. Colonne: {list(df.columns)}")
-
-# Se c'è una colonna 'date' la usiamo per ordinare
-date_col = "date" if "date" in df.columns else None
-
-tickers = sorted(t for t in df["ticker"].dropna().unique())
-for t in tickers:
-    sdf = df[df["ticker"] == t].copy()
-    if date_col is not None and date_col in sdf.columns:
-        sdf[date_col] = pd.to_datetime(sdf[date_col], errors="coerce")
-        sdf = sdf.sort_values(date_col)
-    out_path = os.path.join(out_dir, f"{t}.html")
-    sdf.to_html(out_path, index=False)
-PY
+          csv_path = "datasets/investing_history.csv"
+          out_dir = "public/datasets"
+          os.makedirs(out_dir, exist_ok=True)
+          
+          df = pd.read_csv(csv_path)
+          
+          # Normalizza nomi colonne
+          df.columns = [str(c).lower() for c in df.columns]
+          if "symbol" in df.columns and "ticker" not in df.columns:
+              df = df.rename(columns={"symbol": "ticker"})
+          
+          # HTML complessivo (opzionale, lo manteniamo)
+          full_html_path = os.path.join(out_dir, "investing_history.html")
+          df.to_html(full_html_path, index=False)
+          
+          # HTML per singolo ETF (ticker)
+          if "ticker" not in df.columns:
+              raise ValueError(f"Nessuna colonna 'ticker' trovata. Colonne: {list(df.columns)}")
+          
+          # Se c'è una colonna 'date' la usiamo per ordinare
+          date_col = "date" if "date" in df.columns else None
+          
+          tickers = sorted(t for t in df["ticker"].dropna().unique())
+          for t in tickers:
+              sdf = df[df["ticker"] == t].copy()
+              if date_col is not None and date_col in sdf.columns:
+                  sdf[date_col] = pd.to_datetime(sdf[date_col], errors="coerce")
+                  sdf = sdf.sort_values(date_col)
+              out_path = os.path.join(out_dir, f"{t}.html")
+              sdf.to_html(out_path, index=False)
+          PY
 
           # Disabilita cache lato CDN su Pages per la cartella datasets
           echo "/datasets/*" > public/_headers
